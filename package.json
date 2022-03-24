@@ -1,0 +1,22 @@
+{
+  "name": "mindtrunk2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "node-sass sass main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mindtrunk-dev/mindtrunk2022.git"
+  },
+  "author": "rajan patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mindtrunk-dev/mindtrunk2022/issues"
+  },
+  "homepage": "https://github.com/mindtrunk-dev/mindtrunk2022#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
