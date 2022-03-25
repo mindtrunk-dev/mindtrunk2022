@@ -1,1 +1,0 @@
-# mindtrunk2022
