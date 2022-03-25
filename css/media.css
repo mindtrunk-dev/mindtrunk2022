@@ -1,117 +1,144 @@
 @media screen and (max-width: 992px)
 {
-	.services .services-card .bg-pale-yellow
-	{
+	.services .services-card .bg-pale-yellow{
 		margin: 10px !important;
 	}
-	.services .services-card .bg-pale-red
-	{
+	.services .services-card .bg-pale-red{
 		margin: 10px !important;
 	}
-	.services .services-card .bg-pale-leaf
-	{
+	.services .services-card .bg-pale-leaf{
 		margin: 10px !important;
 	}
-	.services .services-card .bg-pale-primary
-	{
+	.services .services-card .bg-pale-primary{
 		margin: 10px !important;
 	}
-
-	.services .services-details .text
-	{
+	.services .services-details .text{
 		padding: 0px 20px 0px 20px !important;
 	}
-	.our-process .our-services .process
-	{
+	.services .services-details h2{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.our-process .our-services .process{
 		display: block !important;
 		padding: 0px;
 	}
+	.our-process .our-services h2{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.our-process-1 .our-services-1 .our-services-info h2{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.pricing-card .card-info .card-details .card {
+		margin: 10px;
+		padding: 0px;
+	}
+	
+	
+
 }
 
 @media screen and (max-width: 1400px)
 {
-	.services .services-card .bg-pale-yellow
-	{
+	.services .services-card .bg-pale-yellow{
 		margin: 5px 0px 0px 10px !important;		
 	}
-	.services .services-card .bg-pale-red
-	{
+	.services .services-card .bg-pale-red{
 		margin: 30px 0px 10px 10px !important;
 	}
-	.services .services-card .bg-pale-leaf
-	{
+	.services .services-card .bg-pale-leaf{
 		margin: 0px 10px 0px 30px !important;
 	}
-	.services .services-card .bg-pale-primary
-	{
+	.services .services-card .bg-pale-primary{
 		margin: 20px 30px 0px 0px !important;
 	}
-	.services .services-details .text
-	{
+	.services .services-details .text{
 		padding: 0px 20px 0px 20px !important;
 	}
-
-	.our-process .our-services .process
-	{
+	.services .services-details h2{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.our-process .our-services .process{
 		display: block !important;
 		padding: 0px;
+	}
+	.our-process .our-services h2{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.our-process-1 .our-services-1 .our-services-info h2{
+		font-size: 25px;
+		margin-bottom: 10px;
 	}
 }
 @media screen and (max-width: 736px)
 {
-	.services .services-card .bg-pale-yellow
-	{
+	.services .services-card .bg-pale-yellow{
 		margin: 10px !important;		
 	}
-	.services .services-card .bg-pale-red
-	{
+	.services .services-card .bg-pale-red{
 		margin: 10px !important;
 	}
-	.services .services-card .bg-pale-leaf
-	{
+	.services .services-card .bg-pale-leaf{
 		margin: 10px !important;
 	}
-	.services .services-card .bg-pale-primary
-	{
+	.services .services-card .bg-pale-primary{
 		margin: 10px !important;
 	}
-	.services .services-details .text
-	{
+	.services .services-details .text{
 		padding: 0px 20px 0px 20px !important;
 	}
-
-	.our-process .our-services .process
-	{
+	.services .services-details h2{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.our-process .our-services .process{
 		display: block !important;
 		padding: 0px;
+	}
+	.our-process .our-services h2{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.our-process-1 .our-services-1 .our-services-info h2{
+		font-size: 25px;
+		margin-bottom: 10px;
 	}
 }
 @media screen and (max-width: 1024px)
 {
-	.services .services-card .bg-pale-yellow
-	{
+	.services .services-card .bg-pale-yellow{
 		margin: 0px 0px 10px 0px !important;		
 	}
-	.services .services-card .bg-pale-red
-	{
+	.services .services-card .bg-pale-red{
 		margin: 0px 0px 10px 0px !important;
 	}
-	.services .services-card .bg-pale-leaf
-	{
+	.services .services-card .bg-pale-leaf{
 		margin: 10px 0px 0px 0px !important;
 	}
-	.services .services-card .bg-pale-primary
-	{
+	.services .services-card .bg-pale-primary{
 		margin: 10px 0px 0px 0px !important;
 	}
-	.services .services-details .text
-	{
+	.services .services-details .text{
 		padding: 0px 20px 0px 20px !important;
 	}
-
-	.our-process .our-services .process
-	{
-		display: block;
+	.services .services-details h2{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.our-process .our-services .process{
+		display: block !important;
 		padding: 0px;
+	}
+	.our-process .our-services h2{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.our-process-1 .our-services-1 .our-services-info h2{
+		font-size: 25px;
+		margin-bottom: 10px;
 	}
 }
