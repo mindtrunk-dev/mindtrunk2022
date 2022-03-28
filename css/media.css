@@ -35,8 +35,34 @@
 		margin: 10px;
 		padding: 0px;
 	}
-	
-	
+	.our-process .our-community .community-info
+	{
+		padding: 30px 0px 0px 0px;
+	}
+
+/*company-team*/
+	.company-team .text-center h2
+	{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.company-team .about-team .company-team-info h2
+	{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.company-team .about-team
+	{
+		padding: 0px !important;
+	}
+	.company-team .about-team .company-team-image .team-image  img
+	{
+		margin: 0px !important;
+		padding: 10px !important;
+		width: 310px !important;
+		height: 310px !important;
+		display:  inline-block !important;
+	}	
 
 }
 
@@ -73,6 +99,34 @@
 		font-size: 25px;
 		margin-bottom: 10px;
 	}
+	.our-process .our-community .community-info
+	{
+		padding: 30px 0px 0px 0px;
+	}
+/*company-team*/
+	.company-team .text-center h2
+	{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.company-team .about-team .company-team-info h2
+	{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.company-team .about-team
+	{
+		padding: 0px !important;
+	}
+	.company-team .about-team .company-team-image .team-image  img
+	{
+		margin: 0px !important;
+		padding: 10px !important;
+		width: 310px !important;
+		height: 310px !important;
+		display:  inline-block !important;
+	}
+
 }
 @media screen and (max-width: 736px)
 {
@@ -107,6 +161,34 @@
 		font-size: 25px;
 		margin-bottom: 10px;
 	}
+	.our-process .our-community .community-info
+	{
+		padding: 30px 0px 0px 0px;
+	}
+/*company-team*/
+	.company-team .text-center h2
+	{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.company-team .about-team .company-team-info h2
+	{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.company-team .about-team
+	{
+		padding: 0px !important;
+	}
+	.company-team .about-team .company-team-image .team-image  img
+	{
+		margin: 0px !important;
+		padding: 10px !important;
+		width: 310px !important;
+		height: 310px !important;
+		display:  inline-block !important;
+	}
+
 }
 @media screen and (max-width: 1024px)
 {
@@ -137,11 +219,42 @@
 		font-size: 25px;
 		margin-bottom: 10px;
 	}
+	.our-process .our-community .community-info
+	{
+		padding: 30px 0px 0px 0px;
+	}
 	.our-process-1 .our-services-1 .our-services-info h2{
 		font-size: 25px;
 		margin-bottom: 10px;
 	}
+<<<<<<< HEAD
 }
 
 
 
+=======
+/*company-team*/
+	.company-team .text-center h2
+	{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.company-team .about-team .company-team-info h2
+	{
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.company-team .about-team
+	{
+		padding: 0px !important;
+	}
+	.company-team .about-team .company-team-image .team-image  img
+	{
+		margin: 0px !important;
+		padding: 10px !important;
+		width: 310px !important;
+		height: 310px !important;
+		display:  inline-block !important;
+	}
+}
+>>>>>>> 0627c9e4bc1a60aa25d95abc1e6331576e109fe8

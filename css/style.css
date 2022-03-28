@@ -88,6 +88,14 @@
   font-family: 'Manrope', sans-serif;
   white-space: normal; }
 
+.container-fluid {
+  padding: 0px;
+  margin: 0px; }
+
+.row {
+  padding: 0px;
+  margin: 0px; }
+
 p {
   line-height: 22px;
   font-size: 16px; }
@@ -96,6 +104,7 @@ p {
   margin-top: 50px; }
   .services-details h2 {
     font-size: 35px;
+    font-family: 'DM Serif Display', serif;
     margin-bottom: 30px;
     color: black; }
   .services-details .more-btn {
@@ -117,6 +126,7 @@ p {
         padding: 30px; }
       .services-details .services-card .card-details h4 {
         font-size: 20px;
+        font-family: 'DM Serif Display', serif;
         margin-bottom: 10px;
         color: black; }
     .services-details .services-card .bg-pale-yellow {
@@ -141,6 +151,7 @@ p {
   margin: 0px; }
   .our-process h2 {
     font-size: 35px;
+    font-family: 'DM Serif Display', serif;
     margin-bottom: 30px;
     color: black; }
   .our-process .process {
@@ -149,6 +160,7 @@ p {
       padding: 10px 10px 0px 10px; }
       .our-process .process .concept h4 {
         font-size: 20px;
+        font-family: 'DM Serif Display', serif;
         margin-bottom: 10px;
         color: black; }
 
@@ -158,13 +170,13 @@ p {
     align-items: center; }
     .our-services-1 .our-services-info h2 {
       font-size: 35px;
+      font-family: 'DM Serif Display', serif;
       margin-bottom: 30px;
       color: black; }
-    .our-services-1 .our-services-info h4 {
-      font-size: 20px;
+    .our-services-1 .our-services-info h6 {
       margin-bottom: 10px;
-      color: black;
-      margin: 20px 0px  10px 0px; }
+      line-height: 40px;
+      margin: 0px 0px  10px 0px; }
     .our-services-1 .our-services-info .progress {
       height: 8px; }
       .our-services-1 .our-services-info .progress .bg-primary {
@@ -191,7 +203,7 @@ p {
         .our-services-1 .our-services-info ul li i {
           font-size: 20px;
           padding: 0px 10px 0px 10px;
-          color: #7cb798; }
+          color: var(--bs-blue); }
 
 .pricing-card {
   align-items: center;
@@ -206,6 +218,7 @@ p {
       box-shadow: 1px 1px 10px #ECEAEA; }
       .pricing-card .card-info .card h4 {
         font-size: 20px;
+        font-family: 'DM Serif Display', serif;
         margin-bottom: 10px;
         color: black;
         text-align: center;
@@ -214,10 +227,13 @@ p {
           font-size: 60px; }
       .pricing-card .card-info .card .project-plan {
         margin-bottom: 30px; }
-      .pricing-card .card-info .card i {
-        font-size: 20px;
-        padding: 0px 10px 0px 10px;
-        color: #7cb798; }
+        .pricing-card .card-info .card .project-plan p {
+          padding-bottom: 10px;
+          margin: 0px; }
+        .pricing-card .card-info .card .project-plan i {
+          font-size: 20px;
+          padding: 0px 10px 0px 10px;
+          color: var(--bs-blue); }
       .pricing-card .card-info .card .choose-btn {
         color: white;
         border-radius: 50px;
@@ -228,12 +244,74 @@ p {
         font-weight: 700;
         background-color: var(--bs-blue); }
 
-.our-community {
-  padding: 120px 0px 120px 0px; }
-  .our-community h2 {
-    font-size: 35px;
-    margin-bottom: 30px;
+.our-community .community-info {
+  padding: 30px 150px 0px 150px; }
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 5;
+  inherits: false; }
+
+.count-num {
+  animation: counter 5s  alternate ease-in-out;
+  counter-reset: num var(--num); }
+
+.count-num::after {
+  content: counter(num); }
+
+@keyframes counter {
+  from {
+    --num: 5; }
+  to {
+    --num: 100; } }
+
+.footer-bg {
+  align-items: center;
+  margin-top: 100px;
+  background-color: #21262c; }
+  .footer-bg .footer-info a {
+    text-decoration: none; }
+  .footer-bg .footer-info h4 {
+    font-size: 20px;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 10px;
     color: black; }
+  .footer-bg .footer-info p {
+    color: #cacaca; }
+  .footer-bg .footer-info .social-media a {
+    margin-right: 20px; }
+
+.company-team h2 {
+  font-size: 35px;
+  font-family: 'DM Serif Display', serif;
+  margin-bottom: 30px;
+  color: black; }
+
+.company-team .about-team .company-team-info h4 {
+  font-size: 20px;
+  font-family: 'DM Serif Display', serif;
+  margin-bottom: 10px;
+  color: black; }
+
+.company-team .about-team .company-team-info ul {
+  list-style: none; }
+  .company-team .about-team .company-team-info ul li {
+    padding: 0px 10px 0px 10px;
+    font-size: 16px; }
+    .company-team .about-team .company-team-info ul li i {
+      font-size: 20px;
+      padding: 0px 10px 0px 10px;
+      color: var(--bs-blue); }
+
+.company-team .about-team .company-team-image .team-image .about-2 img {
+  width: 370px;
+  height: 370px;
+  margin-left: 180px; }
+
+.company-team .about-team .company-team-image .team-image .about-3 img {
+  width: 340px;
+  height: 340px;
+  margin: -120px 0px 0px 30px; }
 
 hr {
   margin: 4.5rem 0;
@@ -454,46 +532,44 @@ hr {
                 line-height: 1.5rem;
                 color: #444444;
                 margin: 0px; }
-
-.find-out {
-  background-image: url("../images/about16.jpg");
-  padding: 160px 15px; }
-  .find-out .find-out-content {
-    margin: 0px 0px 10px;
-    padding: 0px 50px; }
-    .find-out .find-out-content a {
-      border: 2px solid red;
-      border-radius: 100%;
-      width: 3.5rem;
-      height: 3.5rem;
-      padding: 0;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-      line-height: 1;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      background: #fff; }
-      .find-out .find-out-content a i {
-        color: #343f52;
-        font-size: 2.3rem; }
-      .find-out .find-out-content a:befor {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border-radius: 50%;
-        background: #fff;
-        opacity: .8;
-        -webkit-animation: ripple-1 2s infinite ease-in-out;
-        animation: ripple-1 2s infinite ease-in-out;
-        z-index: -1; }
-    .find-out .find-out-content h3 {
-      white-space: normal;
-      font-family: 'DM Serif Display', serif;
-      font-size: 40px;
-      text-align: center; }
+  .content-wrapper .find-out {
+    background-image: url("../images/about16.jpg");
+    padding: 160px 15px; }
+    .content-wrapper .find-out .find-out-content {
+      margin: 0px 0px 10px;
+      padding: 0px 50px; }
+      .content-wrapper .find-out .find-out-content a {
+        border-radius: 100%;
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        line-height: 1;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        background: #fff; }
+        .content-wrapper .find-out .find-out-content a i {
+          color: #343f52;
+          font-size: 2.3rem; }
+        .content-wrapper .find-out .find-out-content a:befor {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          border-radius: 50%;
+          background: #fff;
+          opacity: .8;
+          -webkit-animation: ripple-1 2s infinite ease-in-out;
+          animation: ripple-1 2s infinite ease-in-out;
+          z-index: -1; }
+      .content-wrapper .find-out .find-out-content h3 {
+        white-space: normal;
+        font-family: 'DM Serif Display', serif;
+        font-size: 40px;
+        text-align: center; }
