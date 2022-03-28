@@ -80,7 +80,11 @@
 	    --bs-body-color: #60697b;
 	    --bs-body-bg: #fefefe
 	}
-
+	@media screen and(max-width:540px){
+		body{
+			overflow-x:hidden;
+		}
+	}
 	*{
 		margin:0;
 		padding:0;
@@ -345,6 +349,7 @@ p{ line-height: 22px; font-size: 16px; }
 			button{
 				i{
 					color:var(--bs-violet);
+					float:right;
 				}
 			}
 		}     
@@ -385,8 +390,8 @@ p{ line-height: 22px; font-size: 16px; }
 		   	}
 
 		   	.explo-contact{ 
-		   		margin:5px;
-		   	
+		   		margin:5px; 
+		   		float:left;
 		   		a{ 
 		   			.btn-explore{
 			   			background:var(--bs-violet);
@@ -407,14 +412,41 @@ p{ line-height: 22px; font-size: 16px; }
 			   		}
 		   		}
 			}
+			@media screen and (max-width:540px){
+				.explo-contact{
+					.btn-explore{
+						width:85vw; 
+					}
+					.btn-contact{
+						width:85vw;  
+					}
+				}
+			}
 		}
-	   	.right-portion{   
+	   	.right-portion{
 	   		img{
 	   			border-radius:20px 0px 0px 20px;
 	   			height:70vh;
 	   			width:100vw;
 	   		}
-	   	} 	
+	   	} 
+	   	@media screen and (max-width:540px){
+	   		.right-portion{
+		   		img{
+		   			border-radius:0px 0px 0px 0px; 
+		   			width:100%;
+		   			height:100%;
+		   		}
+		   	} 
+	   	}	
+   	}
+   	@media screen and (max-width:540px){
+
+	   	.contact-one{  
+	   		.left-portion{  
+	   			padding:0rem 0rem;
+	   		}
+	   	}
    	}
    	.we-bring{ 
    		padding:160px 15px;
@@ -447,6 +479,11 @@ p{ line-height: 22px; font-size: 16px; }
 			   	}
 		   	}
 
+		   	@media screen and (max-width:540px){
+		   		.bring-portion{ 
+		   			padding:0px 0px;
+	   			}
+		   	}
 	   		.bring-option{
 	   			width:calc(100% / 2);
 
@@ -462,10 +499,15 @@ p{ line-height: 22px; font-size: 16px; }
 	   	}
    		.bring-sub{ 
    			margin:-40px -35px 0px;
-	   		.bring-pera{
-	   			img{
-	   				margin:0px 20px 0px 0px;
+	   		
+	   		.bring-pera{ 
+	   			width: calc(100% / 3); 
+	   			float:left;
+	   			img{ 
+	   				padding:0px 0px 0px 20px;
+	   				width:50%; 
 	   			}
+	   			
 	   			h5{
 	   				white-space:normal;
 	   				font-size:19px;
@@ -480,6 +522,28 @@ p{ line-height: 22px; font-size: 16px; }
 	   				color:var(--bs-body-color);
 	   			}
 	   		}
+	   		@media screen and(max-width: 1000px){
+				.bring-pera{
+					border:2px solid red; 
+					float:left;
+					height:250px;
+					width: calc(100% / 3) !important;
+
+					img{
+						width:100%;
+					}
+				}
+			}
+	   		@media screen and(max-width: 540px){
+				.bring-pera{
+					width: calc(100% / 1) !important;
+					text-align:center;
+					img{
+						width:20%;
+						padding:0px 0px 0px 0px; 
+					}
+				}
+			}
 	   	}
 
 	   	.bring-second{
@@ -505,117 +569,114 @@ p{ line-height: 22px; font-size: 16px; }
 			   			margin:0px 0px 35px;
 		   			}
 
-	   				accordion-wrapper{
-			   			
-			   			.card {
-						    margin-bottom: 1.25rem;
-						}
-						
-						.plain {
-						    background: 0 0;
-						    border: 0;
-						    margin-bottom: 0;
-						    box-shadow: none;
+		   			.accordian{
+		   				max-width:600px;
+		   				display:block;
+		   				margin:10px auto;
 
-						    .card-body {
-								padding: 0 0 0 1.1rem;
-								background:none;
-							}
-						
-							.card-header {
-							    padding: 0 0 .8rem 0;
-							    margin-bottom: 0;
-							    background: none;
-							    border: none;
-							    padding: .9rem 1.3rem .85rem;
+		   				.card{
+			   				box-shadow:0px 0px 20px #d4d4d4;
+			   				margin-bottom:20px;
+			   				float:left;
+			   				width:100%;
 
-							    button {
-								    padding: 0 0 0 1.1rem;
-								    cursor: pointer;
-								    width: 100%;
-								    padding: 0 0 0 1.2rem;
-								    text-align: left;
-								    margin: 0;
-								    border: none;
-								    font-size: .85rem;
-								    font-weight: 700; 
-								    transition: all 150ms ease-in-out;
-								    background: 0 0;
+		   				 	.card-header{
+		   				 		position:relative;
+		   				 		background:none;
+		   				 		span{
+		   				 			position:absolute; 
+		   				 			top:20px;
+		   				 			border-radius:50%;
+				   				 		text-align:center;
+		   				 			i{
+				   				 		
+				   				 		
+				   				 		height:25px;
+				   				 		width:25px; 
+				   				 		color:var(--bs-violet);
 
-								    &:before {
-									    left: 0;
-									    font-family: Custom;
-									    position: absolute;
-									    left: 1.3rem;
-									    content: "\e903";
-									    font-size: 1rem;
-									    font-weight: 400;
-									    width: 1rem;
-									    margin-top: -.2rem;
-									    margin-left: -.3rem;
-									    display: inline-block; 
-									}
+				   				 		line-height:25px;
+				   				 		font-size:1rem;
+				   				 	}
+		   				 		}
+			   				 	h2{
+			   				 		cursor:pointer;
+			   				 		color:#000;
+			   				 		position:relative; 
+			   				 		margin:0;
+			   				 		padding:15px 25px;
+			   				 		font-size:1rem;
+			   				 	}
+		   				 	}
 
-									.collapsed {
-									    color: #343f52;
+		   				 	.card-body{
+		   				 		display:none;
+		   				 		padding:20px;
 
-									    &:before {
-										    content: "\e900";
-										}
-									}
-									&:hover {
-									    color: #3f78e0;
-									}
-								}
-							}
-						}
-					} 
-					@media (prefers-reduced-motion:reduce) {
-					    .accordion-wrapper .card-header button {
-					        transition: none;
-					        background:none;
-					    }
-					} 
- 					
- 					.accordion-button{
-					    color: none;
-					    background-color:none;
-					    box-shadow: none;
-					}
-	 				.accordion-item .card-body {
-					    padding: 0 1.25rem .25rem 2.5rem;
-					    background:#fff;
-					    
-					    p{
-					    	white-space:normal;
-					    }
-					}
+		   				 		p{
+		   				 			font-size:1rem;
+		   				 			line-height:1.5rem;
+		   				 			color:#444444;
+		   				 			margin:0px;
 
-					.accordion-item.icon .card-body {
-					    padding: 0 1.25rem .25rem 2.8rem;
-					}
-
-					.accordion-item.icon button {
-					    padding: 0 0 0 1.5rem;
-					    display: flex;
-					    align-items: center;
-					    background:none;
-					    &:before {
-						    display: none;
-						}
-					}
-  
-					.accordion-item.icon button>span {
-					    position: absolute;
-					    left: 1.3rem;
-
-					    i {
-						    font-size: 1rem;
-						}
-					}  
+		   				 		}
+		   				 	} 
+		   				} 
+		   			}  
 	   			}
 	   		}
    		}
+	}
+	.find-out{
+		background-image:url("../images/about16.jpg"); 
+		padding:160px 15px;
+		.find-out-content{ 
+			margin:0px 0px 10px;
+			padding:0px 50px;
+
+			a{
+				border:2px solid red;
+				border-radius:100%;
+				width: 3.5rem;
+    			height: 3.5rem;
+    			padding: 0;  
+			    display: inline-flex;
+			    align-items: center;
+			    justify-content: center;
+			    font-size: 1rem;
+			    line-height: 1;
+			    -webkit-backface-visibility: hidden;
+			    backface-visibility: hidden;	
+			    background:#fff;
+
+			    i{
+			    	color: #343f52;
+			    	font-size: 2.3rem;
+			    }
+			    &:befor{
+			    	content: "";
+				    display: block;
+				    position: absolute;
+				    top: 0;
+				    right: 0;
+				    bottom: 0;
+				    left: 0;
+				    border-radius: 50%;
+				    background: #fff;
+				    opacity: .8;
+				    -webkit-animation: ripple-1 2s infinite ease-in-out;
+				    animation: ripple-1 2s infinite ease-in-out;
+				    z-index: -1;
+			    }
+			}
+
+			h3{
+				white-space:normal;
+	   			font-family: 'DM Serif Display', serif;
+	   			font-size:40px;
+	   			text-align:center;
+			}
+		} 
 	}
 
 
