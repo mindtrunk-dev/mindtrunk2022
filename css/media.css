@@ -45,6 +45,9 @@
 	{
 		font-size: 25px;
 		margin-bottom: 10px;
+	}.company-team .dotted-bg
+	{
+		display: none;
 	}
 	.company-team .about-team .company-team-info h2
 	{
@@ -63,7 +66,19 @@
 		height: 310px !important;
 		display:  inline-block !important;
 	}	
-
+	.company-team .how-work h2
+	{ 
+		font-size: 25px;
+		margin-bottom: 10px; 
+	}	
+	.company-team .how-work .how-work-info .how-work-steps .steps-2{ 
+		margin: 0px !important; 
+	}	
+	.company-team .team{ margin: 0px !important; }
+	.company-team .team-info .team-profile .team-members{ padding: 10px !important; }
+	.company-team .team-progress .team-progress-info { padding: 10px !important; }
+	.company-team .team-progress .team-progress-info { display: inline-block !important; margin: 0px !important;}
+	.company-team .team-progress .team-progress-info img{ width: 50px !important; height: 50px !important; }
 }
 
 @media screen and (max-width: 1400px)
@@ -125,7 +140,16 @@
 		width: 310px !important;
 		height: 310px !important;
 		display:  inline-block !important;
-	}
+	}		
+	.company-team .how-work h2
+	{ 
+		font-size: 25px;
+		margin-bottom: 10px; 
+	}	
+	.company-team .how-work .how-work-info .how-work-steps .steps-2{ 
+		margin: 0px !important; 
+	}	
+	.company-team .team-info .team-profile .team-members{ padding: 10px !important; }
 
 }
 @media screen and (max-width: 736px)
@@ -187,10 +211,21 @@
 		width: 310px !important;
 		height: 310px !important;
 		display:  inline-block !important;
+	}		
+	.company-team .how-work h2
+	{ 
+		font-size: 25px;
+		margin-bottom: 10px; 
+	}	
+	.company-team .how-work .how-work-info .how-work-steps .steps-2
+	{ 
+		margin: 0px !important; 
 	}
+	.company-team .team-info .team-profile .team-members{ padding: 10px !important; }
+	/*.company-team .team-info .team-profile .team-members .card-bo{ padding: 10px !important; }*/
 
 }
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1024px) 
 {
 	.services .services-card .bg-pale-yellow{
 		margin: 0px 0px 10px 0px !important;		
@@ -226,28 +261,52 @@
 	.our-process-1 .our-services-1 .our-services-info h2{
 		font-size: 25px;
 		margin-bottom: 10px;
+	}		
+	.company-team .how-work h2
+	{ 
+		font-size: 25px;
+		margin-bottom: 10px; 
+	}	
+	.company-team .how-work .how-work-info .how-work-steps .steps-2{ 
+		margin: 0px !important; 
 	}
+	.company-team .team-info .team-profile .team-members{ padding: 10px !important; }
+
+}
+
 /*company-team*/
-	.company-team .text-center h2
+	/*.company-team .text-center h2
 	{
 		font-size: 25px;
 		margin-bottom: 10px;
-	}
-	.company-team .about-team .company-team-info h2
+	}*/
+/*	.company-team .about-team .company-team-info h2
 	{
 		font-size: 25px;
 		margin-bottom: 10px;
-	}
+	}*/
 	.company-team .about-team
 	{
 		padding: 0px !important;
 	}
-	.company-team .about-team .company-team-image .team-image  img
+
+/*	.company-team .how-work h2
+	{ 
+		font-size: 25px;
+		margin-bottom: 10px; 
+	}	*/
+	/*.company-team .how-work .how-work-info .how-work-steps .steps-2
+	{ 
+		margin: 0px !important; 
+	}*/
+	.company-team .team-info .team-profile .team-members{ padding: 10px !important; }
+/*	.company-team .about-team .company-team-image .team-image  img
 	{
 		margin: 0px !important;
 		padding: 10px !important;
 		width: 310px !important;
 		height: 310px !important;
 		display:  inline-block !important;
-	}
+	}*/
 }
+
