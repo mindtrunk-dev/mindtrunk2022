@@ -496,18 +496,22 @@ hr {
           padding: 0px 0px 0px 30px; }
     .content-wrapper .we-bring .bring-sub {
       margin: -40px -35px 0px; }
-      .content-wrapper .we-bring .bring-sub .bring-pera img {
-        margin: 0px 20px 0px 0px; }
-      .content-wrapper .we-bring .bring-sub .bring-pera h5 {
-        white-space: normal;
-        font-size: 19px;
-        margin: 0px 0px 5px;
-        color: var(--bs-navy); }
-      .content-wrapper .we-bring .bring-sub .bring-pera p {
-        white-space: normal;
-        font-size: 16px;
-        font-weight: normal;
-        color: var(--bs-body-color); }
+      .content-wrapper .we-bring .bring-sub .bring-pera {
+        width: calc(100% / 3);
+        float: left; }
+        .content-wrapper .we-bring .bring-sub .bring-pera img {
+          margin: 0px 20px 0px 0px;
+          width: 50%; }
+        .content-wrapper .we-bring .bring-sub .bring-pera h5 {
+          white-space: normal;
+          font-size: 19px;
+          margin: 0px 0px 5px;
+          color: var(--bs-navy); }
+        .content-wrapper .we-bring .bring-sub .bring-pera p {
+          white-space: normal;
+          font-size: 16px;
+          font-weight: normal;
+          color: var(--bs-body-color); }
     .content-wrapper .we-bring .bring-second {
       margin: 80px -20px 0px; }
       .content-wrapper .we-bring .bring-second .few-reason-img figure img {
@@ -521,76 +525,178 @@ hr {
           font-size: 40px;
           color: #000;
           margin: 0px 0px 35px; }
-        .content-wrapper .we-bring .bring-second .few-reason accordion-wrapper .card {
-          margin-bottom: 1.25rem; }
-        .content-wrapper .we-bring .bring-second .few-reason accordion-wrapper .plain {
-          background: 0 0;
-          border: 0;
-          margin-bottom: 0;
-          box-shadow: none; }
-          .content-wrapper .we-bring .bring-second .few-reason accordion-wrapper .plain .card-body {
-            padding: 0 0 0 1.1rem;
-            background: none; }
-          .content-wrapper .we-bring .bring-second .few-reason accordion-wrapper .plain .card-header {
-            padding: 0 0 .8rem 0;
-            margin-bottom: 0;
-            background: none;
-            border: none;
-            padding: .9rem 1.3rem .85rem; }
-            .content-wrapper .we-bring .bring-second .few-reason accordion-wrapper .plain .card-header button {
-              padding: 0 0 0 1.1rem;
-              cursor: pointer;
-              width: 100%;
-              padding: 0 0 0 1.2rem;
-              text-align: left;
-              margin: 0;
-              border: none;
-              font-size: .85rem;
-              font-weight: 700;
-              transition: all 150ms ease-in-out;
-              background: 0 0; }
-              .content-wrapper .we-bring .bring-second .few-reason accordion-wrapper .plain .card-header button:before {
-                left: 0;
-                font-family: Custom;
+        .content-wrapper .we-bring .bring-second .few-reason .accordian {
+          max-width: 600px;
+          display: block;
+          margin: 10px auto; }
+          .content-wrapper .we-bring .bring-second .few-reason .accordian .card {
+            box-shadow: 0px 0px 20px #d4d4d4;
+            margin-bottom: 20px;
+            float: left;
+            width: 100%; }
+            .content-wrapper .we-bring .bring-second .few-reason .accordian .card .card-header {
+              position: relative;
+              background: none; }
+              .content-wrapper .we-bring .bring-second .few-reason .accordian .card .card-header span {
                 position: absolute;
-                left: 1.3rem;
-                content: "\e903";
+                top: 20px;
+                border-radius: 50%;
+                text-align: center; }
+                .content-wrapper .we-bring .bring-second .few-reason .accordian .card .card-header span i {
+                  height: 25px;
+                  width: 25px;
+                  color: var(--bs-violet);
+                  line-height: 25px;
+                  font-size: 1rem; }
+              .content-wrapper .we-bring .bring-second .few-reason .accordian .card .card-header h2 {
+                cursor: pointer;
+                color: #000;
+                position: relative;
+                margin: 0;
+                padding: 15px 25px;
+                font-size: 1rem; }
+            .content-wrapper .we-bring .bring-second .few-reason .accordian .card .card-body {
+              display: none;
+              padding: 20px; }
+              .content-wrapper .we-bring .bring-second .few-reason .accordian .card .card-body p {
                 font-size: 1rem;
-                font-weight: 400;
-                width: 1rem;
-                margin-top: -.2rem;
-                margin-left: -.3rem;
-                display: inline-block; }
-              .content-wrapper .we-bring .bring-second .few-reason accordion-wrapper .plain .card-header button .collapsed {
-                color: #343f52; }
-                .content-wrapper .we-bring .bring-second .few-reason accordion-wrapper .plain .card-header button .collapsed:before {
-                  content: "\e900"; }
-              .content-wrapper .we-bring .bring-second .few-reason accordion-wrapper .plain .card-header button:hover {
-                color: #3f78e0; }
-        @media (prefers-reduced-motion: reduce) {
-          .content-wrapper .we-bring .bring-second .few-reason .accordion-wrapper .card-header button {
-            transition: none;
-            background: none; } }
-        .content-wrapper .we-bring .bring-second .few-reason .accordion-button {
-          color: none;
-          background-color: none;
-          box-shadow: none; }
-        .content-wrapper .we-bring .bring-second .few-reason .accordion-item .card-body {
-          padding: 0 1.25rem .25rem 2.5rem;
-          background: #fff; }
-          .content-wrapper .we-bring .bring-second .few-reason .accordion-item .card-body p {
-            white-space: normal; }
-        .content-wrapper .we-bring .bring-second .few-reason .accordion-item.icon .card-body {
-          padding: 0 1.25rem .25rem 2.8rem; }
-        .content-wrapper .we-bring .bring-second .few-reason .accordion-item.icon button {
-          padding: 0 0 0 1.5rem;
-          display: flex;
-          align-items: center;
-          background: none; }
-          .content-wrapper .we-bring .bring-second .few-reason .accordion-item.icon button:before {
-            display: none; }
-        .content-wrapper .we-bring .bring-second .few-reason .accordion-item.icon button > span {
-          position: absolute;
-          left: 1.3rem; }
-          .content-wrapper .we-bring .bring-second .few-reason .accordion-item.icon button > span i {
-            font-size: 1rem; }
+                line-height: 1.5rem;
+                color: #444444;
+                margin: 0px; }
+  .content-wrapper .we-proud {
+    padding: 120px 15px; }
+    .content-wrapper .we-proud .proud-contant {
+      padding: 0px 35px; }
+      .content-wrapper .we-proud .proud-contant h3 {
+        font-size: 40px;
+        font-family: 'DM Serif Display', serif;
+        color: #000;
+        margin: 0px 0px 15px;
+        padding: 0px 50px 0px 0px; }
+      .content-wrapper .we-proud .proud-contant p {
+        font-size: 21px;
+        color: var(--bs-body-color);
+        padding: 0px 50px 0px 0px;
+        font-weight: 400; }
+    .content-wrapper .we-proud .counter {
+      margin: 30px 0px 0px;
+      padding: 0px 15px; }
+      .content-wrapper .we-proud .counter img {
+        width: 50%;
+        margin: 0px 0px 15px; }
+      .content-wrapper .we-proud .counter h3 {
+        font-size: 42px;
+        font-family: 'DM Serif Display', serif;
+        margin: 0px 0px 10px; }
+      .content-wrapper .we-proud .counter p {
+        font-size: 16px;
+        font-weight: 400; }
+    .content-wrapper .we-proud .gy-6 {
+      --bs-gutter-y: 1.5rem; }
+    .content-wrapper .we-proud .company-team {
+      padding: 40px;
+      box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, 0.07);
+      border-radius: 8px; }
+      .content-wrapper .we-proud .company-team .com-team-content img {
+        border-radius: 50%;
+        margin: 0px 0px 20px;
+        height: 100px;
+        width: 100px; }
+      .content-wrapper .we-proud .company-team .com-team-content h4 {
+        font-size: 19px;
+        color: var(--bs-navy);
+        margin: 0px 0px 5px; }
+      .content-wrapper .we-proud .company-team .com-team-content h5 {
+        font-size: 13px;
+        text-transform: uppercase;
+        color: var(--bs-secondary);
+        margin: 0px 0px 10px; }
+      .content-wrapper .we-proud .company-team .com-team-content p {
+        font-size: 16px;
+        color: var(--bs-body-color); }
+      .content-wrapper .we-proud .company-team .com-team-content .social-media-icon a {
+        text-decoration: none;
+        margin: 0px 14px 0px 0px; }
+        .content-wrapper .we-proud .company-team .com-team-content .social-media-icon a i {
+          font-size: 20px; }
+  @media screen and (max-width: 540px) {
+    .content-wrapper .we-proud {
+      padding: 90px 15px; }
+      .content-wrapper .we-proud .proud-contant {
+        margin: -50px -15px 60px; }
+        .content-wrapper .we-proud .proud-contant h3 {
+          padding: 0px 0px 0px 0px !important; } }
+  .content-wrapper .what-people h3 {
+    font-size: 40px;
+    font-family: 'DM Serif Display', serif;
+    margin: 0px 0px 15px;
+    color: #000; }
+  .content-wrapper .what-people p {
+    font-size: 21px;
+    margin: 0px 0px 50px; }
+  .content-wrapper .what-people img {
+    border-radius: 10px; }
+  .content-wrapper .what-people .counter-wrapper {
+    background: #cccccc;
+    padding: 60px 40px; }
+    .content-wrapper .what-people .counter-wrapper p {
+      margin-bottom: 0;
+      font-size: .8rem;
+      font-weight: 500; }
+    .content-wrapper .what-people .counter-wrapper .counter {
+      font-size: calc(1.325rem + .9vw);
+      letter-spacing: normal;
+      line-height: 1;
+      margin-bottom: .5rem; }
+  .content-wrapper .what-people .card {
+    border-radius: 20px; }
+    .content-wrapper .what-people .card .card-body {
+      border-radius: 8px; }
+  .content-wrapper .carousel-indicators button {
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px !important;
+    background: #000; }
+  .content-wrapper .carousel-item {
+    min-height: 350px; }
+    .content-wrapper .carousel-item .carousel-caption {
+      color: #000; }
+      .content-wrapper .carousel-item .carousel-caption i {
+        font-size: 3rem;
+        color: var(--bs-secondary); }
+  .content-wrapper .add-logos img {
+    border-radius: 0px; }
+  .content-wrapper footer .mb-15 {
+    margin-bottom: 5rem !important; }
+  .content-wrapper footer .image-wrapper {
+    background-image: url("../images/about16.jpg");
+    background-size: cover;
+    height: 450px; }
+  .content-wrapper footer .col-lg-6 .p-10 {
+    padding: 2.5rem !important; }
+  .content-wrapper footer .col-lg-6 .p-md-11 {
+    padding: 3rem !important; }
+  .content-wrapper footer .col-lg-6 .p-lg-13 {
+    padding: 4rem !important; }
+  .content-wrapper footer .col-lg-6 h3 {
+    white-space: normal;
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    color: var(--bs-navy);
+    margin: 0px 0px 15px; }
+  .content-wrapper footer .col-lg-6 p.lead {
+    font-size: 21px; }
+  .content-wrapper footer .col-lg-6 p {
+    font-size: 16px;
+    margin: 0px 0px 20px;
+    color: var(--bs-body-color); }
+  .content-wrapper footer .col-lg-6 a {
+    background: var(--bs-violet);
+    color: #fff;
+    margin: 10px 0px 0px;
+    padding: 10px 24px;
+    font-size: 16px; }
+  .content-wrapper footer .widget p a {
+    text-decoration: none;
+    color: var(--bs-body-color); }
