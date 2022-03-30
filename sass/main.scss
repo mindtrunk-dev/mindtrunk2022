@@ -3,6 +3,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Sans:wght@700&family=Lobster&family=Manrope:wght@700&family=Poppins:ital,wght@0,500;0,600;0,700;1,700&family=Roboto+Mono:wght@100;500;700&family=Roboto+Slab:wght@100&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300;1,400&family=Rubik:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Sans:wght@700&family=Lobster&family=Manrope:wght@200;700&family=Poppins:ital,wght@0,500;0,600;0,700;1,700&family=Roboto+Mono:wght@100;500;700&family=Roboto+Slab:wght@100&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300;1,400&family=Rubik:wght@500&display=swap');
+
 :root {
 	    --bs-gray-100: #f8f9fa;
 	    --bs-gray-200: #e9ecef;
@@ -34,9 +36,9 @@
 	    --bs-dark: #262b32;
 	    --bs-primary: #3f78e0;
 	    --bs-pale-yellow: #fef3e4;
-		  --bs-pale-red: #fae6e7;
-		  --bs-pale-leaf: #eaf3ef;
-		  --bs-pale-primary: #e0e9fa ;
+		--bs-pale-red: #fae6e7;
+		--bs-pale-leaf: #eaf3ef;
+		--bs-pale-primary: #e0e9fa ;
 	    --bs-secondary: #aab0bc;
 	    --bs-success: #45c4a0;
 	    --bs-info: #54a8c7;
@@ -109,9 +111,7 @@
 @mixin h3code
 {
 	font-size: 30px;
-	font-family: 'DM Serif Display', serif;
-	margin-bottom: 30px;
-	color: black;
+	margin-bottom: 30px; 
 }
 @mixin h4code
 {
@@ -145,7 +145,11 @@
 	font-weight: 700;
 }
 
-
+h3{
+	white-space:normal;
+	font-family: 'DM Serif Display', serif; 
+	color:#343f52;
+}
 p{ 
 	line-height: 25px;
 	font-size: 15px; 
@@ -489,7 +493,7 @@ hr {
 					li{
 						.nav-link{
 							font-size:1rem;
-							font-weight:500;
+							font-weight:700;
 							color:var(--bs-navy);
 
 							&:hover{
@@ -580,21 +584,19 @@ hr {
 
    	.contact-one{  
    		.left-portion{  
-   			padding:0rem 8rem;
-   		
-	   		h3{ 
-	   			white-space:normal;
-	   			font-family: 'DM Serif Display', serif;
-	   			font-size:52px;
-	   			color:#000; 
+   			padding:0rem 7rem;
+   			
+	   		h3{  
 	   			margin:30px 0px 25px;
 		   	}
 		   	p{ 
 				white-space:normal; 
 		   		font-size:25px;
-		   		font-weight:300;
-		   		color:#000; 
-		   		margin:0px 0px 55px;
+		   		font-weight:400;
+		   		color:var(--bs-body-color);
+		   		margin:0px 0px 35px;
+		   		line-height:1.5;
+		   		padding:0px 40px 0px 0px;
 		   	}
 
 		   	.explo-contact{ 
@@ -605,13 +607,15 @@ hr {
 			   			background:var(--bs-violet);
 			   			color:#fff; 
 			   			border-radius:50px;
-			   			padding:13px 28px;
+			   			padding:15px 28px;
+			   			font-weight:700;
 			   		}
 			   		.btn-contact{
 			   			border:2px solid var(--bs-violet);
 			   			color:var(--bs-violet); 
 			   			border-radius:50px;
-			   			padding:13px 28px;
+			   			padding:15px 28px;
+			   			font-weight:700;
 						
 						&:hover{
 			   				background:var(--bs-violet);
@@ -621,11 +625,22 @@ hr {
 		   		}
 			}
 		}
+		@media screen and(max-width:540px){
+			.left-portion{  
+   				padding:0rem 1rem;
+   			}
+		}
 	   	.right-portion{   
 	   		img{
 	   			border-radius:20px 0px 0px 20px;
 	   			height:70vh;
 	   			width:100vw;
+	   		}
+	   		@media screen and(max-width:540px){
+	   			img{
+	   			border-radius:0px 0px 0px 0px;
+	   			height:50vh;
+	   			}
 	   		}
 	   	} 	
    	}
@@ -637,39 +652,47 @@ hr {
    		
 	   		.rounded {
 			    img{
-			    	border-radius: 1rem !important;
+			    	border-radius: 10px !important;
 			    }
 			}
 
 	   		.bring-portion{
 	   			margin:70px 0px 0px;
 	   			padding:0px 35px;
-		   		h3{ 
-		   			white-space:normal;
-		   			font-family: 'DM Serif Display', serif;
-		   			font-size:52px;
-		   			color:#000; 
-		   			margin:30px 0px 25px;
+		   		
+		   		h3{   
+		   			font-size:40px;
+		   			margin:0px 0px 25px;
 			   	}
+			   	
 			   	p{ 
 					white-space:normal; 
 			   		font-size:16px;
-			   		font-weight:300;
-			   		color:#000; 
+			   		font-weight:400;
+			   		color:#60697b; 
 			   		margin:0px 0px 35px;
 			   	}
 		   	}
 
 	   		.bring-option{
 	   			width:calc(100% / 2);
-
-	   			p::before{ 
-	   				border-radius:50px;
-	   				padding:0px 6px; 
-	   			}
+ 				
+ 				i{
+ 					position:absolute;
+ 					padding:5px;
+ 					background:#eee7f5;
+ 					border-radius:50%; 
+ 					margin:2px;
+ 				}
 	   			p{
 	   				white-space:normal;
-	   				padding:0px 0px 0px 30px;
+	   				padding:0px 0px 0px 30px; 
+	   				position:relative;
+	   			}
+	   		} 
+	   		@media screen and(max-width:540px){
+	   			.bring-option{
+	   				width:calc(100% / 1);
 	   			}
 	   		}
 	   	}
@@ -685,6 +708,7 @@ hr {
 	   			h5{
 	   				white-space:normal;
 	   				font-size:19px;
+	   				font-weight:700;
 	   				margin:0px 0px 5px;
 	   				color:var(--bs-navy);
 	   			}
@@ -694,6 +718,12 @@ hr {
 	   				font-size:16px;
 	   				font-weight:normal;
 	   				color:var(--bs-body-color);
+	   			}
+	   		}
+	   		@media screen and(max-width:540px){
+	   			.bring-pera{
+	   				width:calc(100% / 1);
+	   				text-align:center; 
 	   			}
 	   		}
 	   	}
@@ -713,11 +743,8 @@ hr {
 		   		margin:80px 0px 0px;
 		 		padding:0px 20px;
 		   			
-		 		h3{
-		 			white-space:normal;
-		   			font-family: 'DM Serif Display', serif;
-		   			font-size:40px;
-		   			color:#000; 
+		 		h3{ 
+		   			font-size:40px; 
 		   			margin:0px 0px 35px;
 				}
 
@@ -726,13 +753,14 @@ hr {
 	   				display:block;
 	   				margin:10px auto;
 
-	   				.card{
-		   				box-shadow:0px 0px 20px #d4d4d4;
-		   				margin-bottom:20px;
+	   				.card{ 
+	   					border:none;
+		   				margin-bottom:-20px;
 		   				float:left;
 		   				width:100%;
 
 	   				 	.card-header{
+	   				 		border:none;
 	   				 		position:relative;
 	   				 		background:none;
 		   				 	
@@ -746,7 +774,7 @@ hr {
 				   				 	height:25px;
 				   				 	width:25px; 
 				   				 	color:var(--bs-violet); 
-				   				 	line-height:25px;
+				   				 	line-height:22px;
 				   				 	font-size:1rem;
 				   				}
 		   				 	}
@@ -756,13 +784,19 @@ hr {
 			   				 	position:relative; 
 			   				 	margin:0;
 			   				 	padding:15px 25px;
+			   				 	font-weight:700;
 			   				 	font-size:1rem;
+
+			   				 	&:hover{
+			   				 		color:var(--bs-violet);
+			   				 		transition:.2s ease-in;
+			   				 	}
 			   				}
 		   				}
 
 		   				.card-body{
 		   					display:none;
-		   					padding:20px;
+		   					padding:20px 0px 20px 40px;
 
 		   					p{
 		   						font-size:1rem;
@@ -784,9 +818,7 @@ hr {
    			padding:0px 35px;
 
    			h3{
-   				font-size: 40px;
-				font-family: 'DM Serif Display', serif;
-				color:#000;
+   				font-size: 40px; 
 				margin:0px 0px 15px;
 				padding:0px 50px 0px 0px;
    			}
@@ -807,8 +839,7 @@ hr {
    			}
 
    			h3{
-   				font-size: 42px;
-				font-family: 'DM Serif Display', serif;
+   				font-size: 42px; 
 				margin:0px 0px 10px;
    			}
 
@@ -840,12 +871,14 @@ hr {
    					font-size:19px;
    					color:var(--bs-navy);
    					margin:0px 0px 5px;
+   					font-weight:700;
    				}
    				h5{
    					font-size:13px;
    					text-transform:uppercase;
    					color:var(--bs-secondary);
    					margin:0px 0px 10px;
+   					font-weight:700;
    				}
    				p{
    					font-size:16px;
@@ -880,14 +913,13 @@ hr {
 
    	.what-people{
    		h3{
-  			font-size: 40px;
-			font-family: 'DM Serif Display', serif; 			
-			margin:0px 0px 15px;
-			color:#000;
+  			font-size: 40px; 			
+			margin:0px 0px 15px; 
    		}
    		p{
    			font-size: 21px;
    			margin:0px 0px 50px;
+   			font-weight:400;
    		} 
    		img{
    			border-radius:10px;
@@ -920,12 +952,12 @@ hr {
    		button{
    			border:2px solid #000;
    			border-radius:50%;
-   			width: 8px;
-   			height:8px !important;
+   			width: 5px;
+   			height:5px !important;
    			background:#000;
    		}
    	}
-   	.carousel-item{ 
+   	.carousel-item{  
 	    min-height:350px;
 	    
 	    .carousel-caption{
@@ -934,6 +966,20 @@ hr {
 	    	i{
 	    		font-size:3rem;
 	    		color:var(--bs-secondary);
+	    	}
+	    	blockquote {
+	    		p{
+	    			color:var(--bs-body-color);
+	    		}
+
+	    		.blockquote-details{
+	    			h5{
+	    				font-weight:700;
+	    			}
+	    			p{
+	    				font-size:1rem;
+	    			}
+	    		}
 	    	}
 	    }
     }
@@ -963,15 +1009,13 @@ hr {
 		    .p-lg-13 {
 		        padding: 4rem !important
 		    }
-		    h3{ 
-	   			white-space:normal;
-	   			font-family: 'DM Serif Display', serif;
-	   			font-size:40px;
-	   			color:var(--bs-navy); 
+		    h3{  
+	   			font-size:40px; 
 	   			margin:0px 0px 15px;
 		   	}
 		   	p.lead{
 		   			font-size:21px;
+		   			font-weight:400;
 		   		}
 		   	p{
 		   		font-size:16px;
@@ -984,15 +1028,31 @@ hr {
 		   		margin:10px 0px 0px;
 		   		padding:10px 24px;
 		   		font-size:16px;
+		   		font-weight:700;
 		   	}
 	    }
 	    .widget{
+	    	h4{
+	    		font-size:19px;
+	    		margin:0px 0px 10px;
+	    		font-weight:700;
+	    	}  
 	    	p{
-	    		a{
+	    		a{ 
+	    			font-size:16px;
+	    			font-weight:600;
 	    			text-decoration:none;
-	    			color:var(--bs-body-color);
+	    			color:var(--bs-body-color); 
+	    		}
+	    	} 
+	    } 
+	    nav{
+	    	a{
+	    		margin:0 7px;
+	    		i{
+	    			font-size:1rem;
 	    		}
 	    	}
-	    } 
+	    }
     }
 } 
