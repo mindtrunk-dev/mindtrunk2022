@@ -94,6 +94,12 @@ p {
   font-weight: 400;
   font-family: 'Poppins', sans-serif; }
 
+a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #60697b;
+  font-family: 'Poppins', sans-serif; }
+
 .container-fluid {
   padding: 0px;
   margin: 0px; }
@@ -105,7 +111,7 @@ p {
 .services-details {
   margin-top: 50px; }
   .services-details h2 {
-    font-size: 35px;
+    font-size: 40px;
     font-family: 'DM Serif Display', serif;
     margin-bottom: 30px;
     color: black;
@@ -153,7 +159,7 @@ p {
   align-items: center;
   margin: 0px; }
   .our-process h2 {
-    font-size: 35px;
+    font-size: 40px;
     font-family: 'DM Serif Display', serif;
     margin-bottom: 30px;
     color: black;
@@ -173,7 +179,7 @@ p {
   .our-services-1 .our-services-info {
     align-items: center; }
     .our-services-1 .our-services-info h2 {
-      font-size: 35px;
+      font-size: 40px;
       font-family: 'DM Serif Display', serif;
       margin-bottom: 30px;
       color: black;
@@ -289,7 +295,7 @@ p {
     margin-right: 20px; }
 
 .company-team h2 {
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'DM Serif Display', serif;
   margin-bottom: 30px;
   color: black;
@@ -376,6 +382,47 @@ p {
 
 .company-team .team-progress .team-progress-info {
   padding: 0px 150px 0px 150px; }
+
+::placeholder {
+  color: red; }
+
+.get-in-touch h2 {
+  font-size: 40px;
+  font-family: 'DM Serif Display', serif;
+  margin-bottom: 30px;
+  color: black;
+  letter-spacing: 2px; }
+
+.get-in-touch .contact-us .contact-us-link {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+
+.get-in-touch .leave-msg .msg-box .msg-link {
+  padding: 30px; }
+  .get-in-touch .leave-msg .msg-box .msg-link input {
+    padding: 10px;
+    margin: 10px; }
+  .get-in-touch .leave-msg .msg-box .msg-link textarea {
+    padding: 10px;
+    margin: 10px;
+    white-space: no-wrap; }
+  .get-in-touch .leave-msg .msg-box .msg-link .choose-btn {
+    color: white;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    padding: 10px 24px;
+    margin-top: 15px;
+    font-weight: 700;
+    background-color: var(--bs-blue); }
+  .get-in-touch .leave-msg .msg-box .msg-link ::placeholder {
+    font-size: 12px;
+    color: #959ca9; }
+  .get-in-touch .leave-msg .msg-box .msg-link h6 {
+    font-size: 12px;
+    float: right;
+    color: #959ca9; }
+    .get-in-touch .leave-msg .msg-box .msg-link h6 span {
+      font-size: 20px; }
 
 hr {
   margin: 4.5rem 0;
