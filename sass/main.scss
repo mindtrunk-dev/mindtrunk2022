@@ -36,9 +36,9 @@
 	    --bs-dark: #262b32;
 	    --bs-primary: #3f78e0;
 	    --bs-pale-yellow: #fef3e4;
-		--bs-pale-red: #fae6e7;
-		--bs-pale-leaf: #eaf3ef;
-		--bs-pale-primary: #e0e9fa ;
+			--bs-pale-red: #fae6e7;
+			--bs-pale-leaf: #eaf3ef;
+			--bs-pale-primary: #e0e9fa ;
 	    --bs-secondary: #aab0bc;
 	    --bs-success: #45c4a0;
 	    --bs-info: #54a8c7;
@@ -148,9 +148,19 @@
 	border-radius: 50px;
 	width: 150px;
 	height: 50px;
-	padding: 10px 24px;
+	padding: 10px 25px;
 	margin-top: 15px;
 	font-weight: 700;
+	display: inline-block;
+	position:relative;
+	overflow: hidden;
+	background: var(--bs-blue);
+
+		&:hover{
+			transform: translateY(-5px);
+			transition: .5s;
+		}
+	
 }
 
 h3{
@@ -171,16 +181,15 @@ a{
 	color: #60697b;
 	font-family: 'Poppins', sans-serif
 }
+
+
 .container-fluid{ padding: 0px; margin: 0px;}
 .row{ padding: 0px; margin: 0px;}
 
 .services-details { margin-top: 50px;
 	h2 { @include h2code;}
 
-	.more-btn {
-		background: #343f52; 
-	    @include btncode;
-	}
+.more-btn { @include btncode; }
 
 	.services-card {
 		padding: 0px;
@@ -285,7 +294,7 @@ a{
 					color: var(--bs-blue); 
 				}
 			}
-			.choose-btn{ @include btncode; background-color: var(--bs-blue); }
+			.choose-btn{ @include btncode; }
 		}
 	}
 }
@@ -330,6 +339,14 @@ a{
 
 		.social-media{
 			a{	margin-right: 20px;}
+			
+			img{
+				&:hover{
+					transform: translateY(-3px);
+					transition: .5s;
+					cursor: pointer;
+				}
+			}
 		}
 	}
 }
@@ -402,11 +419,20 @@ a{
 			.team-members{ padding: 30px;
 				.card-body{ padding: 30px;
 					h6{ @include h6code; }
-					img{ border-radius: 50px;}
+					img{ border-radius: 50px; }
+					.social-icon{
+					 img{
+					 &:hover{
+							transform: translateY(-3px);
+							transition: .5s all;
+							cursor: pointer;
+						}
+					 }
+					}
 				}
 			}
 		}
-
+	
 		.slide{
 			.carousel-btn{
 				background-color: var(--bs-red);
@@ -470,11 +496,15 @@ a{
 					font-weight:600;
 				}
 				textarea{ 
-					padding: 10px; 
+					padding: 10px;  
 					margin: 10px; 
 					font-weight:600;
 				} 
-				.choose-btn{ @include btncode; background-color: var(--bs-blue); width:auto;}
+				.choose-btn{ @include btncode; background-color: var(--bs-blue); width:auto;} 
+					margin: 10px;
+					white-space: no-wrap;
+				}
+				.choose-btn{ @include btncode; } 
 				::placeholder{
 				  font-size: 12px;
 				  color: #959ca9;
@@ -485,8 +515,46 @@ a{
 			}
 		}
 	}
-}
 
+.about-team{
+	.team{
+		h2{ @include h2code;}
+		h6{ 
+		 i{ padding-right: 10px; }
+		}
+		.choose-btn{ @include btncode; }
+		.team-info{
+		.team-profile{
+			.team-members{ padding: 10px;
+				.card-body{ padding: 10px;
+					h6{ @include h6code; }
+					img{ border-radius: 50px;	}
+
+					.social-icon{
+					 img{
+					 &:hover{
+							transform: translateY(-3px);
+							transition: .5s;
+							cursor: pointer;
+						}
+					 }
+					}
+				}
+			}
+		}
+
+		.slide{
+			.carousel-btn{
+				background-color: var(--bs-red);
+				width: 10px;
+				height: 10px;
+				margin: 0px 8px 0px 8px;
+				border-radius: 50%;
+			}
+		}
+	}
+	}
+}
 
 
 
@@ -1062,7 +1130,7 @@ hr {
     	}
     }
 
-    footer{
+    f{
  		.mb-15 {
 		    margin-bottom: 5rem !important
 		}
