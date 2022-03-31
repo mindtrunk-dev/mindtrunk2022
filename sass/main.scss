@@ -92,7 +92,15 @@
 		font-family: 'Manrope', sans-serif;
 		white-space:normal;  
 	}
+	@keyframes animatemedia {
+	    0% {
+	        transform: translateY(0px);
+	    }
 
+	    100% {
+	    	transform: translateY(-5px);
+	    }
+	}
 @mixin h1code
 {
 	font-size: 50px;
@@ -462,10 +470,22 @@ a{
 	.contact-us{ 
 		.contact-us-link{
 			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;				
+
+			.contact-details{
+				.support-info{
+					h6{
+						font-weight:700;
+					}
+				}
+			}
 		}
 	}
 
 	.leave-msg{
+
+		h6{
+			font-weight:600;
+		}
 		.msg-box{
 			.msg-link{
 				padding: 30px;
@@ -473,13 +493,18 @@ a{
 				input{ 
 					padding: 10px; 
 					margin: 10px;
+					font-weight:600;
 				}
 				textarea{ 
-					padding: 10px; 
+					padding: 10px;  
+					margin: 10px; 
+					font-weight:600;
+				} 
+				.choose-btn{ @include btncode; background-color: var(--bs-blue); width:auto;} 
 					margin: 10px;
 					white-space: no-wrap;
 				}
-				.choose-btn{ @include btncode; }
+				.choose-btn{ @include btncode; } 
 				::placeholder{
 				  font-size: 12px;
 				  color: #959ca9;
@@ -490,7 +515,6 @@ a{
 			}
 		}
 	}
-}
 
 .about-team{
 	.team{
@@ -550,9 +574,12 @@ hr {
 	.content-wrapper{ 
 	   flex-grow: 1;
 
-	   .top-header{ 
+	   .top-header{  
 				padding:0.8rem 0; 
+				background:#fff;
+
 		nav{
+
 			.header-menu{
 				ul{
 					li{
@@ -579,6 +606,9 @@ hr {
 
 							&:hover{
 								color:var(--bs-violet);
+								animation-name: animatemedia;
+							animation-duration:1s;
+						    	animation-fill-mode: both;
 							}
 						}
 					}
@@ -616,9 +646,10 @@ hr {
 
 						&:hover{
 							color:var(--bs-violet);
+							animation: animatemedia .5s ease normal;
 						}
 					}
-				} 
+				}  
 			}
 		} 
 		.offcanvas-btn{
@@ -648,10 +679,12 @@ hr {
 	}
 
    	.contact-one{  
+   		margin-top:100px;
    		.left-portion{  
    			padding:0rem 7rem;
    			
 	   		h3{  
+	   			font-size:52px;
 	   			margin:30px 0px 25px;
 		   	}
 		   	p{ 
@@ -668,12 +701,16 @@ hr {
 		   		margin:5px;
 		   	
 		   		a{ 
+		   			button{
+		   				float:left; 
+		   			}
 		   			.btn-explore{
 			   			background:var(--bs-violet);
+			   			border:2px solid var(--bs-violet);
 			   			color:#fff; 
 			   			border-radius:50px;
 			   			padding:15px 28px;
-			   			font-weight:700;
+			   			font-weight:700; 
 			   		}
 			   		.btn-contact{
 			   			border:2px solid var(--bs-violet);
@@ -688,6 +725,11 @@ hr {
 			   			}
 			   		}
 		   		}
+		   		&:hover { 
+				    animation-name: animatemedia; 
+					animation-duration: .5s;
+					animation-fill-mode: both;				
+				}
 			}
 		}
 		@media screen and(max-width:540px){
@@ -708,6 +750,30 @@ hr {
 	   			}
 	   		}
 	   	} 	
+   	}
+   	@media screen and(max-width:540px){
+   		.contact-one{  
+   			margin-top:0px;
+   			
+   			.left-portion{
+   				h3{
+   					font-size:32px;
+   					text-align:center;
+   				}
+   				p{
+   					text-align:center;
+   					padding:0px 0px 0px 0px;
+   				}
+   				.explo-contact{
+   					a{
+   						button{ 
+   							width:90vw !important;
+   							margin:5px 0px;
+   						}
+   					}
+   				}
+   			}
+   		}
    	}
    	.we-bring{ 
    		padding:160px 15px;
@@ -789,6 +855,8 @@ hr {
 	   			.bring-pera{
 	   				width:calc(100% / 1);
 	   				text-align:center; 
+	   				border:2px solid red; 
+	   				padding:0px 20px;
 	   			}
 	   		}
 	   	}
@@ -956,8 +1024,16 @@ hr {
    						margin:0px 14px 0px 0px;
    						i{
    							font-size:20px;
+
+   							&:hover{
+		   						animation-name: animatemedia;
+						    	animation-duration: 1s;
+						    	animation-fill-mode: both;
+						    	color:var(--bs-violet);
+		   					}
    						}
    					}
+   					
    				}
    			}
    		}
@@ -1061,7 +1137,7 @@ hr {
     	.image-wrapper{
 	    	background-image:url("../images/about16.jpg");
 	    	background-size:cover;
-	    	height:450px;
+	    	height:465px;
 	    }
 	    .col-lg-6{
 	    	.p-10 {
@@ -1094,7 +1170,14 @@ hr {
 		   		padding:10px 24px;
 		   		font-size:16px;
 		   		font-weight:700;
+
+		   		&:hover { 
+				    animation-name: animatemedia; 
+					animation-duration: .5s;
+					animation-fill-mode: both;				
+				}
 		   	}
+
 	    }
 	    .widget{
 	    	h4{
@@ -1116,6 +1199,13 @@ hr {
 	    		margin:0 7px;
 	    		i{
 	    			font-size:1rem;
+
+	    			&:hover { 
+	    			color:var(--bs-violet);
+				    animation-name: animatemedia; 
+					animation-duration: .5s;
+					animation-fill-mode: both;				
+				}
 	    		}
 	    	}
 	    }
