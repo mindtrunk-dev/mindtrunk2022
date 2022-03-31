@@ -88,6 +88,12 @@
   font-family: 'Manrope', sans-serif;
   white-space: normal; }
 
+@keyframes animatemedia {
+  0% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(-5px); } }
+
 h3 {
   white-space: normal;
   font-family: 'DM Serif Display', serif;
@@ -401,16 +407,22 @@ a {
 
 .get-in-touch .contact-us .contact-us-link {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+  .get-in-touch .contact-us .contact-us-link .contact-details .support-info h6 {
+    font-weight: 700; }
+
+.get-in-touch .leave-msg h6 {
+  font-weight: 600; }
 
 .get-in-touch .leave-msg .msg-box .msg-link {
   padding: 30px; }
   .get-in-touch .leave-msg .msg-box .msg-link input {
     padding: 10px;
-    margin: 10px; }
+    margin: 10px;
+    font-weight: 600; }
   .get-in-touch .leave-msg .msg-box .msg-link textarea {
     padding: 10px;
     margin: 10px;
-    white-space: no-wrap; }
+    font-weight: 600; }
   .get-in-touch .leave-msg .msg-box .msg-link .choose-btn {
     color: white;
     border-radius: 50px;
@@ -419,7 +431,8 @@ a {
     padding: 10px 24px;
     margin-top: 15px;
     font-weight: 700;
-    background-color: var(--bs-blue); }
+    background-color: var(--bs-blue);
+    width: auto; }
   .get-in-touch .leave-msg .msg-box .msg-link ::placeholder {
     font-size: 12px;
     color: #959ca9; }
@@ -444,7 +457,8 @@ hr {
 .content-wrapper {
   flex-grow: 1; }
   .content-wrapper .top-header {
-    padding: 0.8rem 0; }
+    padding: 0.8rem 0;
+    background: #fff; }
     .content-wrapper .top-header nav .header-menu ul li .nav-link {
       font-size: 1rem;
       font-weight: 700;
@@ -455,7 +469,10 @@ hr {
       font-size: 1rem;
       color: var(--bs-navy); }
       .content-wrapper .top-header .social-media-icon nav ul li .nav-link:hover {
-        color: var(--bs-violet); }
+        color: var(--bs-violet);
+        animation-name: animatemedia;
+        animation-duration: 1s;
+        animation-fill-mode: both; }
   .content-wrapper .mob-header {
     display: none;
     padding: 0.5rem 0.75rem; }
@@ -472,7 +489,8 @@ hr {
         font-weight: 500;
         color: var(--bs-navy); }
         .content-wrapper .mob-header .offcanvas .offcanvas-body .social-media-icon a:hover {
-          color: var(--bs-violet); }
+          color: var(--bs-violet);
+          animation: animatemedia .5s ease normal; }
     .content-wrapper .mob-header .offcanvas-btn {
       padding: 1.2rem 0.75rem; }
       .content-wrapper .mob-header .offcanvas-btn button i {
@@ -485,46 +503,68 @@ hr {
   @media (max-width: 280px) {
     .content-wrapper .offcanvas-btn {
       padding: 0.8rem 0.5rem !important; } }
-  .content-wrapper .contact-one .left-portion {
-    padding: 0rem 7rem; }
-    .content-wrapper .contact-one .left-portion h3 {
-      margin: 30px 0px 25px; }
-    .content-wrapper .contact-one .left-portion p {
-      white-space: normal;
-      font-size: 25px;
-      font-weight: 400;
-      color: var(--bs-body-color);
-      margin: 0px 0px 35px;
-      line-height: 1.5;
-      padding: 0px 40px 0px 0px; }
-    .content-wrapper .contact-one .left-portion .explo-contact {
-      margin: 5px; }
-      .content-wrapper .contact-one .left-portion .explo-contact a .btn-explore {
-        background: var(--bs-violet);
-        color: #fff;
-        border-radius: 50px;
-        padding: 15px 28px;
-        font-weight: 700; }
-      .content-wrapper .contact-one .left-portion .explo-contact a .btn-contact {
-        border: 2px solid var(--bs-violet);
-        color: var(--bs-violet);
-        border-radius: 50px;
-        padding: 15px 28px;
-        font-weight: 700; }
-        .content-wrapper .contact-one .left-portion .explo-contact a .btn-contact:hover {
-          background: var(--bs-violet);
-          color: #fff; }
-  @media screen and (max-width: 540px) {
+  .content-wrapper .contact-one {
+    margin-top: 100px; }
     .content-wrapper .contact-one .left-portion {
-      padding: 0rem 1rem; } }
-  .content-wrapper .contact-one .right-portion img {
-    border-radius: 20px 0px 0px 20px;
-    height: 70vh;
-    width: 100vw; }
-  @media screen and (max-width: 540px) {
+      padding: 0rem 7rem; }
+      .content-wrapper .contact-one .left-portion h3 {
+        font-size: 52px;
+        margin: 30px 0px 25px; }
+      .content-wrapper .contact-one .left-portion p {
+        white-space: normal;
+        font-size: 25px;
+        font-weight: 400;
+        color: var(--bs-body-color);
+        margin: 0px 0px 35px;
+        line-height: 1.5;
+        padding: 0px 40px 0px 0px; }
+      .content-wrapper .contact-one .left-portion .explo-contact {
+        margin: 5px; }
+        .content-wrapper .contact-one .left-portion .explo-contact a button {
+          float: left; }
+        .content-wrapper .contact-one .left-portion .explo-contact a .btn-explore {
+          background: var(--bs-violet);
+          border: 2px solid var(--bs-violet);
+          color: #fff;
+          border-radius: 50px;
+          padding: 15px 28px;
+          font-weight: 700; }
+        .content-wrapper .contact-one .left-portion .explo-contact a .btn-contact {
+          border: 2px solid var(--bs-violet);
+          color: var(--bs-violet);
+          border-radius: 50px;
+          padding: 15px 28px;
+          font-weight: 700; }
+          .content-wrapper .contact-one .left-portion .explo-contact a .btn-contact:hover {
+            background: var(--bs-violet);
+            color: #fff; }
+        .content-wrapper .contact-one .left-portion .explo-contact:hover {
+          animation-name: animatemedia;
+          animation-duration: .5s;
+          animation-fill-mode: both; }
+    @media screen and (max-width: 540px) {
+      .content-wrapper .contact-one .left-portion {
+        padding: 0rem 1rem; } }
     .content-wrapper .contact-one .right-portion img {
-      border-radius: 0px 0px 0px 0px;
-      height: 50vh; } }
+      border-radius: 20px 0px 0px 20px;
+      height: 70vh;
+      width: 100vw; }
+    @media screen and (max-width: 540px) {
+      .content-wrapper .contact-one .right-portion img {
+        border-radius: 0px 0px 0px 0px;
+        height: 50vh; } }
+  @media screen and (max-width: 540px) {
+    .content-wrapper .contact-one {
+      margin-top: 0px; }
+      .content-wrapper .contact-one .left-portion h3 {
+        font-size: 32px;
+        text-align: center; }
+      .content-wrapper .contact-one .left-portion p {
+        text-align: center;
+        padding: 0px 0px 0px 0px; }
+      .content-wrapper .contact-one .left-portion .explo-contact a button {
+        width: 90vw !important;
+        margin: 5px 0px; } }
   .content-wrapper .we-bring {
     padding: 160px 15px; }
     .content-wrapper .we-bring .we-bring-one {
@@ -580,7 +620,9 @@ hr {
       @media screen and (max-width: 540px) {
         .content-wrapper .we-bring .bring-sub .bring-pera {
           width: calc(100% / 1);
-          text-align: center; } }
+          text-align: center;
+          border: 2px solid red;
+          padding: 0px 20px; } }
     .content-wrapper .we-bring .bring-second {
       margin: 80px -20px 0px; }
       .content-wrapper .we-bring .bring-second .few-reason-img figure img {
@@ -689,6 +731,11 @@ hr {
         margin: 0px 14px 0px 0px; }
         .content-wrapper .we-proud .company-team .com-team-content .social-media-icon a i {
           font-size: 20px; }
+          .content-wrapper .we-proud .company-team .com-team-content .social-media-icon a i:hover {
+            animation-name: animatemedia;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            color: var(--bs-violet); }
   @media screen and (max-width: 540px) {
     .content-wrapper .we-proud {
       padding: 90px 15px; }
@@ -747,7 +794,7 @@ hr {
   .content-wrapper footer .image-wrapper {
     background-image: url("../images/about16.jpg");
     background-size: cover;
-    height: 450px; }
+    height: 465px; }
   .content-wrapper footer .col-lg-6 .p-10 {
     padding: 2.5rem !important; }
   .content-wrapper footer .col-lg-6 .p-md-11 {
@@ -771,6 +818,10 @@ hr {
     padding: 10px 24px;
     font-size: 16px;
     font-weight: 700; }
+    .content-wrapper footer .col-lg-6 a:hover {
+      animation-name: animatemedia;
+      animation-duration: .5s;
+      animation-fill-mode: both; }
   .content-wrapper footer .widget h4 {
     font-size: 19px;
     margin: 0px 0px 10px;
@@ -784,3 +835,8 @@ hr {
     margin: 0 7px; }
     .content-wrapper footer nav a i {
       font-size: 1rem; }
+      .content-wrapper footer nav a i:hover {
+        color: var(--bs-violet);
+        animation-name: animatemedia;
+        animation-duration: .5s;
+        animation-fill-mode: both; }
