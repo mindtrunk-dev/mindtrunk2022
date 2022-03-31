@@ -50,7 +50,7 @@
 	.get-in-touch .leave-msg .msg-box .msg-link{ padding: 10px !important; }
 	.get-in-touch .leave-msg .bg-soft-primary{ margin: 0px !important; padding: 10px !important;}
 
-/*company-team*/
+/*About-company-team*/
 	.company-team .text-center h2
 	{
 		font-size: 30px;
@@ -88,8 +88,13 @@
 	.company-team .team-progress .team-progress-info { display: inline-block !important; margin: 0px !important;}
 	.company-team .team-progress .team-progress-info img{ width: 50px !important; height: 50px !important; }
 
-
-}
+/*Team*/
+	.about-team{ margin: 0px !important; }
+	.about-team .team .about-team-info h2
+	{
+		font-size: 30px;
+		margin-bottom: 10px;
+	}.about-team .team .about-team-info .team-info .slide{	padding: 0px !important;	}
 
 @media screen and (max-width: 1400px)
 {
@@ -170,6 +175,14 @@
 		margin: 0px !important; 
 	}	
 	.company-team .team-info .team-profile .team-members{ padding: 10px !important; }
+/*Team*/
+	.about-team{ margin: 0px !important; }
+	.about-team .team .about-team-info h2
+	{
+		font-size: 30px;
+		margin-bottom: 10px;
+	}.about-team .team .about-team-info .team-info .slide{	padding: 0px !important;	}
+
 
 }
 @media screen and (max-width: 736px)
@@ -253,6 +266,14 @@
 	}
 	.company-team .team-info .team-profile .team-members{ padding: 10px !important; }
 	/*.company-team .team-info .team-profile .team-members .card-bo{ padding: 10px !important; }*/
+/*Team*/
+	.about-team{ margin: 0px !important; }
+	.about-team .team .about-team-info h2
+	{
+		font-size: 30px;
+		margin-bottom: 10px;
+	}.about-team .team .about-team-info .team-info .slide{	padding: 0px !important;}
+
 
 }
 @media screen and (max-width: 1024px) 
@@ -310,9 +331,17 @@
 	}
 	.get-in-touch .contact-us .contact-us-link .contact-details{ padding: 10px !important; }
 	.get-in-touch .leave-msg{ margin: 0px !important; padding-bottom: 0px !important;}
-	.get-in-touch .leave-msg .msg-box .msg-link{ padding: 10px !important; }
+	.get-in-touch .leave-msg .msg-box .msg-link{ padding: 10px !important; display: inline-block !important;}
+	.get-in-touch .leave-msg .msg-box .msg-link .d-flex{ display: inline-block !important;}
 	.get-in-touch .leave-msg .bg-soft-primary{ margin: 0px !important; padding: 10px !important;}
-
+	
+/*Team*/
+	.about-team{ margin: 0px !important; }
+	.about-team .team .about-team-info h2
+	{
+		font-size: 30px;
+		margin-bottom: 10px;
+	}.about-team .team .about-team-info .team-info .slide{	padding: 0px !important;}
 }
 
 /*company-team*/
@@ -349,5 +378,12 @@
 		height: 310px !important;
 		display:  inline-block !important;
 	}*/
+/*Team*/
+	.about-team{ margin: 0px !important; }
+	.about-team .team .about-team-info h2
+	{
+		font-size: 30px;
+		margin-bottom: 10px;
+	}.about-team .team .about-team-info .team-info .slide{	padding: 0px !important;}
 }
 

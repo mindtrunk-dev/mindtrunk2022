@@ -123,14 +123,20 @@ a {
     color: black;
     letter-spacing: 2px; }
   .services-details .more-btn {
-    background: #343f52;
     color: white;
     border-radius: 50px;
     width: 150px;
     height: 50px;
-    padding: 10px 24px;
+    padding: 10px 25px;
     margin-top: 15px;
-    font-weight: 700; }
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: var(--bs-blue); }
+    .services-details .more-btn:hover {
+      transform: translateY(-5px);
+      transition: .5s; }
   .services-details .services-card {
     padding: 0px;
     margin: 0px; }
@@ -258,10 +264,16 @@ a {
         border-radius: 50px;
         width: 150px;
         height: 50px;
-        padding: 10px 24px;
+        padding: 10px 25px;
         margin-top: 15px;
         font-weight: 700;
-        background-color: var(--bs-blue); }
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        background: var(--bs-blue); }
+        .pricing-card .card-info .card .choose-btn:hover {
+          transform: translateY(-5px);
+          transition: .5s; }
 
 .our-community .community-info {
   padding: 30px 150px 0px 150px; }
@@ -299,6 +311,10 @@ a {
     color: #cacaca; }
   .footer-bg .footer-info .social-media a {
     margin-right: 20px; }
+  .footer-bg .footer-info .social-media img:hover {
+    transform: translateY(-3px);
+    transition: .5s;
+    cursor: pointer; }
 
 .company-team h2 {
   font-size: 40px;
@@ -338,10 +354,17 @@ a {
   border-radius: 50px;
   width: 150px;
   height: 50px;
-  padding: 10px 24px;
+  padding: 10px 25px;
   margin-top: 15px;
   font-weight: 700;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background: var(--bs-blue);
   background-color: var(--bs-blue); }
+  .company-team .how-work .how-work-info .btn:hover {
+    transform: translateY(-5px);
+    transition: .5s; }
 
 .company-team .how-work .how-work-info .how-work-steps .working-steps {
   align-items: center;
@@ -378,6 +401,10 @@ a {
       color: black; }
     .company-team .team-info .team-profile .team-members .card-body img {
       border-radius: 50px; }
+    .company-team .team-info .team-profile .team-members .card-body .social-icon img:hover {
+      transform: translateY(-3px);
+      transition: .5s all;
+      cursor: pointer; }
 
 .company-team .team-info .slide .carousel-btn {
   background-color: var(--bs-red);
@@ -416,10 +443,16 @@ a {
     border-radius: 50px;
     width: 150px;
     height: 50px;
-    padding: 10px 24px;
+    padding: 10px 25px;
     margin-top: 15px;
     font-weight: 700;
-    background-color: var(--bs-blue); }
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: var(--bs-blue); }
+    .get-in-touch .leave-msg .msg-box .msg-link .choose-btn:hover {
+      transform: translateY(-5px);
+      transition: .5s; }
   .get-in-touch .leave-msg .msg-box .msg-link ::placeholder {
     font-size: 12px;
     color: #959ca9; }
@@ -429,6 +462,55 @@ a {
     color: #959ca9; }
     .get-in-touch .leave-msg .msg-box .msg-link h6 span {
       font-size: 20px; }
+
+.about-team .team h2 {
+  font-size: 40px;
+  font-family: 'DM Serif Display', serif;
+  margin-bottom: 30px;
+  color: black;
+  letter-spacing: 2px; }
+
+.about-team .team h6 i {
+  padding-right: 10px; }
+
+.about-team .team .choose-btn {
+  color: white;
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  padding: 10px 25px;
+  margin-top: 15px;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background: var(--bs-blue); }
+  .about-team .team .choose-btn:hover {
+    transform: translateY(-5px);
+    transition: .5s; }
+
+.about-team .team .team-info .team-profile .team-members {
+  padding: 10px; }
+  .about-team .team .team-info .team-profile .team-members .card-body {
+    padding: 10px; }
+    .about-team .team .team-info .team-profile .team-members .card-body h6 {
+      margin-bottom: 10px;
+      line-height: 40px;
+      font-size: 18px;
+      color: black; }
+    .about-team .team .team-info .team-profile .team-members .card-body img {
+      border-radius: 50px; }
+    .about-team .team .team-info .team-profile .team-members .card-body .social-icon img:hover {
+      transform: translateY(-3px);
+      transition: .5s;
+      cursor: pointer; }
+
+.about-team .team .team-info .slide .carousel-btn {
+  background-color: var(--bs-red);
+  width: 10px;
+  height: 10px;
+  margin: 0px 8px 0px 8px;
+  border-radius: 50%; }
 
 hr {
   margin: 4.5rem 0;
@@ -742,45 +824,45 @@ hr {
         font-size: 1rem; }
   .content-wrapper .add-logos img {
     border-radius: 0px; }
-  .content-wrapper footer .mb-15 {
+  .content-wrapper f .mb-15 {
     margin-bottom: 5rem !important; }
-  .content-wrapper footer .image-wrapper {
+  .content-wrapper f .image-wrapper {
     background-image: url("../images/about16.jpg");
     background-size: cover;
     height: 450px; }
-  .content-wrapper footer .col-lg-6 .p-10 {
+  .content-wrapper f .col-lg-6 .p-10 {
     padding: 2.5rem !important; }
-  .content-wrapper footer .col-lg-6 .p-md-11 {
+  .content-wrapper f .col-lg-6 .p-md-11 {
     padding: 3rem !important; }
-  .content-wrapper footer .col-lg-6 .p-lg-13 {
+  .content-wrapper f .col-lg-6 .p-lg-13 {
     padding: 4rem !important; }
-  .content-wrapper footer .col-lg-6 h3 {
+  .content-wrapper f .col-lg-6 h3 {
     font-size: 40px;
     margin: 0px 0px 15px; }
-  .content-wrapper footer .col-lg-6 p.lead {
+  .content-wrapper f .col-lg-6 p.lead {
     font-size: 21px;
     font-weight: 400; }
-  .content-wrapper footer .col-lg-6 p {
+  .content-wrapper f .col-lg-6 p {
     font-size: 16px;
     margin: 0px 0px 20px;
     color: var(--bs-body-color); }
-  .content-wrapper footer .col-lg-6 a {
+  .content-wrapper f .col-lg-6 a {
     background: var(--bs-violet);
     color: #fff;
     margin: 10px 0px 0px;
     padding: 10px 24px;
     font-size: 16px;
     font-weight: 700; }
-  .content-wrapper footer .widget h4 {
+  .content-wrapper f .widget h4 {
     font-size: 19px;
     margin: 0px 0px 10px;
     font-weight: 700; }
-  .content-wrapper footer .widget p a {
+  .content-wrapper f .widget p a {
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     color: var(--bs-body-color); }
-  .content-wrapper footer nav a {
+  .content-wrapper f nav a {
     margin: 0 7px; }
-    .content-wrapper footer nav a i {
+    .content-wrapper f nav a i {
       font-size: 1rem; }
