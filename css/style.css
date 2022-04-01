@@ -322,18 +322,37 @@ a {
     transition: .5s;
     cursor: pointer; }
 
-.company-team h2 {
-  font-size: 40px;
-  font-family: 'DM Serif Display', serif;
-  margin-bottom: 30px;
-  color: black;
-  letter-spacing: 2px; }
+.company-team .about-us-contant {
+  background: var(--bs-gray);
+  border: 2px solid #f6f7f9; }
+  .company-team .about-us-contant h2 {
+    font-size: 40px;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 30px;
+    color: black;
+    letter-spacing: 2px;
+    margin-top: 50px; }
+  .company-team .about-us-contant p {
+    font-size: 21px;
+    font-weight: 400; }
+
+.company-team .about-team .company-team-info h2 {
+  font-weight: 700;
+  font-size: 36px;
+  font-color: #343f52;
+  margin: 0px 0px 52px; }
 
 .company-team .about-team .company-team-info h4 {
   font-size: 20px;
   font-family: 'DM Serif Display', serif;
   margin-bottom: 10px;
-  color: black; }
+  color: black;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  margin: 0px 0px 20px; }
+
+.company-team .about-team .company-team-info p {
+  margin: 0px 0px 30px; }
 
 .company-team .about-team .company-team-info ul {
   list-style: none; }
@@ -345,6 +364,25 @@ a {
       padding: 0px 10px 0px 10px;
       color: var(--bs-blue); }
 
+.company-team .about-team .bring-option {
+  width: calc(100% / 2);
+  margin: 15px 0px 0px;
+  padding: 0px 0px 0px 30px; }
+  .company-team .about-team .bring-option i {
+    position: absolute;
+    padding: 5px;
+    background: #eee7f5;
+    border-radius: 50%;
+    margin: 2px; }
+  .company-team .about-team .bring-option p {
+    white-space: normal;
+    padding: 0px 0px 0px 30px;
+    position: relative; }
+
+@media screen and (max-width: 540px) {
+  .company-team .about-team .bring-option {
+    width: calc(100% / 1); } }
+
 .company-team .about-team .company-team-image .team-image .about-2 img {
   width: 370px;
   height: 370px;
@@ -353,7 +391,20 @@ a {
 .company-team .about-team .company-team-image .team-image .about-3 img {
   width: 340px;
   height: 340px;
-  margin: -120px 0px 0px 30px; }
+  margin: -240px 0px 0px 30px; }
+
+.company-team .how-work h2 {
+  font-weight: 700;
+  margin: 0px 0px 20px;
+  padding: 0px 90px; }
+
+.company-team .how-work .how-work-info .how-work-text h2 {
+  text-align: left !important;
+  padding: 0px;
+  margin: 0px 0px 15px; }
+
+.company-team .how-work .how-work-info .how-work-text h4 {
+  font-weight: 100; }
 
 .company-team .how-work .how-work-info .btn {
   color: white;
@@ -367,6 +418,7 @@ a {
   position: relative;
   overflow: hidden;
   background: var(--bs-blue);
+  border: 0px;
   background-color: var(--bs-blue); }
   .company-team .how-work .how-work-info .btn:hover {
     transform: translateY(-5px);
@@ -378,14 +430,17 @@ a {
   .company-team .how-work .how-work-info .how-work-steps .working-steps .card {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; }
   .company-team .how-work .how-work-info .how-work-steps .working-steps .number h4 {
-    background-color: #3f78e0;
+    background: var(--bs-gray);
     align-items: center;
     border-radius: 30px;
     padding: 15px;
-    color: white; }
+    color: var(--bs-blue);
+    font-weight: 700; }
   .company-team .how-work .how-work-info .how-work-steps .working-steps .text {
     align-items: center;
     padding: 0px 0px 0px 30px; }
+    .company-team .how-work .how-work-info .how-work-steps .working-steps .text h6 {
+      font-weight: 700; }
     .company-team .how-work .how-work-info .how-work-steps .working-steps .text p {
       margin: 0px; }
 
@@ -421,6 +476,20 @@ a {
 
 .company-team .team-progress .team-progress-info {
   padding: 0px 150px 0px 150px; }
+  .company-team .team-progress .team-progress-info h2 {
+    font-weight: 700;
+    color: #000 !important; }
+
+.company-team .convinc-contant .convinc-img {
+  padding: 50px 0px; }
+  .company-team .convinc-contant .convinc-img img {
+    border-radius: 5px; }
+
+.company-team .convinc-contant .customer-support h2 {
+  font-weight: 700; }
+
+.company-team .convinc-contant .customer-support .support-info h6 {
+  font-weight: 700; }
 
 ::placeholder {
   color: red; }
@@ -892,53 +961,53 @@ hr {
         font-size: 1rem; }
   .content-wrapper .add-logos img {
     border-radius: 0px; }
-  .content-wrapper f .mb-15 {
+  .content-wrapper footer .mb-15 {
     margin-bottom: 5rem !important; }
-  .content-wrapper f .image-wrapper {
+  .content-wrapper footer .image-wrapper {
     background-image: url("../images/about16.jpg");
     background-size: cover;
     height: 465px; }
-  .content-wrapper f .col-lg-6 .p-10 {
+  .content-wrapper footer .col-lg-6 .p-10 {
     padding: 2.5rem !important; }
-  .content-wrapper f .col-lg-6 .p-md-11 {
+  .content-wrapper footer .col-lg-6 .p-md-11 {
     padding: 3rem !important; }
-  .content-wrapper f .col-lg-6 .p-lg-13 {
+  .content-wrapper footer .col-lg-6 .p-lg-13 {
     padding: 4rem !important; }
-  .content-wrapper f .col-lg-6 h3 {
+  .content-wrapper footer .col-lg-6 h3 {
     font-size: 40px;
     margin: 0px 0px 15px; }
-  .content-wrapper f .col-lg-6 p.lead {
+  .content-wrapper footer .col-lg-6 p.lead {
     font-size: 21px;
     font-weight: 400; }
-  .content-wrapper f .col-lg-6 p {
+  .content-wrapper footer .col-lg-6 p {
     font-size: 16px;
     margin: 0px 0px 20px;
     color: var(--bs-body-color); }
-  .content-wrapper f .col-lg-6 a {
+  .content-wrapper footer .col-lg-6 a {
     background: var(--bs-violet);
     color: #fff;
     margin: 10px 0px 0px;
     padding: 10px 24px;
     font-size: 16px;
     font-weight: 700; }
-    .content-wrapper f .col-lg-6 a:hover {
+    .content-wrapper footer .col-lg-6 a:hover {
       animation-name: animatemedia;
       animation-duration: .5s;
       animation-fill-mode: both; }
-  .content-wrapper f .widget h4 {
+  .content-wrapper footer .widget h4 {
     font-size: 19px;
     margin: 0px 0px 10px;
     font-weight: 700; }
-  .content-wrapper f .widget p a {
+  .content-wrapper footer .widget p a {
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     color: var(--bs-body-color); }
-  .content-wrapper f nav a {
+  .content-wrapper footer nav a {
     margin: 0 7px; }
-    .content-wrapper f nav a i {
+    .content-wrapper footer nav a i {
       font-size: 1rem; }
-      .content-wrapper f nav a i:hover {
+      .content-wrapper footer nav a i:hover {
         color: var(--bs-violet);
         animation-name: animatemedia;
         animation-duration: .5s;
