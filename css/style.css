@@ -112,10 +112,6 @@ a {
   color: #60697b;
   font-family: 'Poppins', sans-serif; }
 
-.container-fluid {
-  padding: 0px;
-  margin: 0px; }
-
 .row {
   padding: 0px;
   margin: 0px; }
@@ -323,18 +319,17 @@ a {
     cursor: pointer; }
 
 .company-team .about-us-contant {
-  background: var(--bs-gray);
-  border: 2px solid #f6f7f9; }
+  background: var(--bs-gray); }
   .company-team .about-us-contant h2 {
-    font-size: 40px;
-    font-family: 'DM Serif Display', serif;
-    margin-bottom: 30px;
-    color: black;
-    letter-spacing: 2px;
-    margin-top: 50px; }
+    padding-top: 50px;
+    margin: 0px 0px 20px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000; }
   .company-team .about-us-contant p {
     font-size: 21px;
-    font-weight: 400; }
+    font-weight: 400;
+    color: var(--bs-body-color); }
 
 .company-team .about-team .company-team-info h2 {
   font-weight: 700;
@@ -398,13 +393,20 @@ a {
   margin: 0px 0px 20px;
   padding: 0px 90px; }
 
-.company-team .how-work .how-work-info .how-work-text h2 {
-  text-align: left !important;
-  padding: 0px;
-  margin: 0px 0px 15px; }
-
-.company-team .how-work .how-work-info .how-work-text h4 {
-  font-weight: 100; }
+.company-team .how-work .how-work-info .how-work-text {
+  padding: 0px 35px;
+  margin: 50px 0px 0px; }
+  .company-team .how-work .how-work-info .how-work-text h2 {
+    text-align: left !important;
+    padding: 0px;
+    margin: 0px 0px 15px; }
+  .company-team .how-work .how-work-info .how-work-text h4 {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0px 0px 20px; }
+  .company-team .how-work .how-work-info .how-work-text p {
+    font-size: 16px;
+    margin: 0px 0px 20px; }
 
 .company-team .how-work .how-work-info .btn {
   color: white;
@@ -424,54 +426,77 @@ a {
     transform: translateY(-5px);
     transition: .5s; }
 
-.company-team .how-work .how-work-info .how-work-steps .working-steps {
-  align-items: center;
-  padding: 10px 0px 10px 0px; }
-  .company-team .how-work .how-work-info .how-work-steps .working-steps .card {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; }
-  .company-team .how-work .how-work-info .how-work-steps .working-steps .number h4 {
-    background: var(--bs-gray);
+.company-team .how-work .how-work-info .how-work-steps {
+  margin: 50px 0px 0px; }
+  .company-team .how-work .how-work-info .how-work-steps .working-steps {
     align-items: center;
-    border-radius: 30px;
-    padding: 15px;
-    color: var(--bs-blue);
-    font-weight: 700; }
-  .company-team .how-work .how-work-info .how-work-steps .working-steps .text {
-    align-items: center;
-    padding: 0px 0px 0px 30px; }
-    .company-team .how-work .how-work-info .how-work-steps .working-steps .text h6 {
-      font-weight: 700; }
-    .company-team .how-work .how-work-info .how-work-steps .working-steps .text p {
-      margin: 0px; }
-
-.company-team .how-work .how-work-info .how-work-steps .steps-2 {
-  margin-left: 50px; }
+    padding: 10px 0px 10px 0px; }
+    .company-team .how-work .how-work-info .how-work-steps .working-steps .card {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; }
+      .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body {
+        padding: 30px; }
+        .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body .number h4 {
+          background: var(--bs-gray);
+          align-items: center;
+          border-radius: 30px;
+          padding: 15px;
+          color: var(--bs-blue);
+          font-weight: 700; }
+        .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body .text {
+          align-items: center;
+          padding: 0px 0px 0px 30px; }
+          .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body .text h6 {
+            font-weight: 700;
+            font-size: 19px; }
+          .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body .text p {
+            margin: 0px;
+            font-size: 16px; }
+  .company-team .how-work .how-work-info .how-work-steps .steps-2 {
+    margin-left: 50px; }
 
 .company-team .dotted-bg {
   margin: 0px 0px -80px 80px;
   float: left; }
 
-.company-team .team-info .team-profile .team-members {
+.company-team .team h2 {
+  font-size: 36px;
+  color: #000;
+  font-weight: 700; }
+
+.company-team .team .team-info .dotted-bg img {
+  border-radius: 50%;
+  margin-left: -20px; }
+
+.company-team .team .team-info .team-profile .team-members {
   padding: 30px; }
-  .company-team .team-info .team-profile .team-members .card-body {
+  .company-team .team .team-info .team-profile .team-members .card {
+    border-radius: 5px; }
+  .company-team .team .team-info .team-profile .team-members .card-body {
+    box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, 0.09);
     padding: 30px; }
-    .company-team .team-info .team-profile .team-members .card-body h6 {
-      margin-bottom: 10px;
-      line-height: 40px;
-      font-size: 18px;
-      color: black; }
-    .company-team .team-info .team-profile .team-members .card-body img {
+    .company-team .team .team-info .team-profile .team-members .card-body img {
       border-radius: 50px; }
-    .company-team .team-info .team-profile .team-members .card-body .social-icon img:hover {
+    .company-team .team .team-info .team-profile .team-members .card-body h4 {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--bs-navy); }
+    .company-team .team .team-info .team-profile .team-members .card-body h5 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ba-sacondary);
+      text-transform: uppercase; }
+    .company-team .team .team-info .team-profile .team-members .card-body p {
+      font-size: 16px; }
+    .company-team .team .team-info .team-profile .team-members .card-body .social-icon img:hover {
       transform: translateY(-3px);
       transition: .5s all;
       cursor: pointer; }
 
-.company-team .team-info .slide .carousel-btn {
-  background-color: var(--bs-red);
+.company-team .team .team-info .slide .carousel-btn {
+  background-color: var(--bs-secondary);
   width: 10px;
   height: 10px;
-  margin: 0px 8px 0px 8px;
+  margin: 0px 5px;
   border-radius: 50%; }
 
 .company-team .team-progress .team-progress-info {
@@ -735,7 +760,7 @@ hr {
         text-align: center;
         padding: 0px 0px 0px 0px; }
       .content-wrapper .contact-one .left-portion .explo-contact a button {
-        width: 90vw !important;
+        width: 70vw !important;
         margin: 5px 0px; } }
   .content-wrapper .we-bring {
     padding: 160px 15px; }
@@ -793,7 +818,6 @@ hr {
         .content-wrapper .we-bring .bring-sub .bring-pera {
           width: calc(100% / 1);
           text-align: center;
-          border: 2px solid red;
           padding: 0px 20px; } }
     .content-wrapper .we-bring .bring-second {
       margin: 80px -20px 0px; }
@@ -908,12 +932,18 @@ hr {
             animation-duration: 1s;
             animation-fill-mode: both;
             color: var(--bs-violet); }
+    @media screen and (max-width: 540px) {
+      .content-wrapper .we-proud .company-team {
+        padding: 20px; } }
   @media screen and (max-width: 540px) {
     .content-wrapper .we-proud {
-      padding: 90px 15px; }
+      padding: 10px 15px;
+      overflow-X: hidden; }
       .content-wrapper .we-proud .proud-contant {
         margin: -50px -15px 60px; }
         .content-wrapper .we-proud .proud-contant h3 {
+          padding: 0px 0px 0px 0px !important; }
+        .content-wrapper .we-proud .proud-contant p {
           padding: 0px 0px 0px 0px !important; } }
   .content-wrapper .what-people h3 {
     font-size: 40px;
@@ -994,15 +1024,27 @@ hr {
       animation-name: animatemedia;
       animation-duration: .5s;
       animation-fill-mode: both; }
+  @media screen and (max-width: 540px) {
+    .content-wrapper footer .col-lg-6 .p-10 {
+      padding: 1rem !important; }
+    .content-wrapper footer .col-lg-6 .p-md-11 {
+      padding: 1rem !important; }
+    .content-wrapper footer .col-lg-6 .p-lg-13 {
+      padding: 1rem !important; } }
   .content-wrapper footer .widget h4 {
     font-size: 19px;
     margin: 0px 0px 10px;
     font-weight: 700; }
   .content-wrapper footer .widget p a {
     font-size: 16px;
-    font-weight: 600;
     text-decoration: none;
-    color: var(--bs-body-color); }
+    color: var(--bs-body-color);
+    line-height: 0;
+    text-align: center; }
+
+@medai screen and(max-width:540px) {
+  .content-wrapper footer .widget p a {
+    white-space: normal; } }
   .content-wrapper footer nav a {
     margin: 0 7px; }
     .content-wrapper footer nav a i {
