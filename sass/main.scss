@@ -182,8 +182,7 @@ a{
 	font-family: 'Poppins', sans-serif
 }
 
-
-.container-fluid{ padding: 0px; margin: 0px;}
+ 
 .row{ padding: 0px; margin: 0px;}
 
 .services-details { margin-top: 50px;
@@ -354,13 +353,19 @@ a{
 
 .company-team{
 	.about-us-contant{
-		background:var(--bs-gray);
-		border:2px solid #f6f7f9;
-		h2{ @include h2code;
-		margin-top:50px; }
-		p{
-			font-size:21px;
-			font-weight:400;
+		background:var(--bs-gray); 
+
+		h2 {
+		    padding-top: 50px;
+		    margin:0px 0px 20px;
+		    font-size:48px; 
+		    font-weight:700;
+		    color:#000;
+		} 
+		p {
+		    font-size: 21px;
+		    font-weight: 400;
+		    color:var(--bs-body-color);
 		}
 	}
 	
@@ -445,13 +450,21 @@ a{
 		}
     	.how-work-info {
 	    	.how-work-text{
-	    		h2{
+	    		padding:0px 35px;
+	    		margin:50px 0px 0px;
+	    		h2{ 
 	    			text-align:left !important;
 	    			padding:0px;
 	    			margin:0px 0px 15px;
 	    		}
 	    		h4{
-	    			font-weight:100;
+	    			font-size:21px;
+	    			font-weight:700;
+	    			margin:0px 0px 20px;
+	    		}
+	    		p{
+	    			font-size:16px;
+	    			margin:0px 0px 20px;
 	    		}
 	    	}
     		
@@ -462,36 +475,43 @@ a{
 	        }
 
 	        .how-work-steps {
+	        	margin:50px 0px 0px;
 	            .working-steps {
 	                align-items: center;
 	                padding: 10px 0px 10px 0px;
 
+
 	                .card {
 	                    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-	                }
 
-	                .number {
-	                    h4 {
-	                        background:var(--bs-gray);
-	                        align-items: center;
-	                        border-radius: 30px;
-	                        padding: 15px;
-	                        color: var(--bs-blue);
-	                        font-weight:700;
-	                    }
-	                }
+	                    .card-body{
+	                    	padding:30px;
+	                    	.number {
+			                    h4 {
+			                        background:var(--bs-gray);
+			                        align-items: center;
+			                        border-radius: 30px;
+			                        padding: 15px;
+			                        color: var(--bs-blue);
+			                        font-weight:700;
+			                    }
+			                }
 
-	                .text {
-	                    align-items: center;
-	                    padding: 0px 0px 0px 30px;
+			                .text {
+			                    align-items: center;
+			                    padding: 0px 0px 0px 30px;
 
-	                    h6{
-	                    	font-weight:700;
+			                    h6{
+			                    	font-weight:700;
+			                    	font-size:19px;
+			                    }
+			                    p {
+			                        margin: 0px;
+			                        font-size:16px;
+			                    }
+			                }	
 	                    }
-	                    p {
-	                        margin: 0px;
-	                    }
-	                }
+	                }  
 	            }
 
 	            .steps-2 {
@@ -501,32 +521,71 @@ a{
 	    }
 	}
 	.dotted-bg{ margin: 0px 0px -80px 80px; float: left;}
-	.team-info{
-		.team-profile{
-			.team-members{ padding: 30px;
-				.card-body{ padding: 30px;
-					h6{ @include h6code; }
-					img{ border-radius: 50px; }
-					.social-icon{
-					 img{
-					 &:hover{
-							transform: translateY(-3px);
-							transition: .5s all;
-							cursor: pointer;
-						}
-					 }
-					}
+	.team{
+
+		h2{
+			font-size:36px;
+			color:#000;
+			font-weight:700;  
+		}
+		.team-info{
+			.dotted-bg{
+				img{
+					border-radius:50%;
+					margin-left:-20px;
 				}
 			}
-		}
-	
-		.slide{
-			.carousel-btn{
-				background-color: var(--bs-red);
-				width: 10px;
-				height: 10px;
-				margin: 0px 8px 0px 8px;
-				border-radius: 50%;
+			.team-profile{
+				.team-members {
+				    padding: 30px;
+
+				    .card{ 
+				    	border-radius:5px;
+				    }
+				    .card-body {
+				    	box-shadow: 0 .25rem 1.75rem rgba(30, 34, 40, .09);  
+				        padding: 30px;
+				          img {
+				            border-radius: 50px;
+				        }
+
+				        h4 {
+				         	font-size:19px;
+				         	font-weight:700;
+				         	color:var(--bs-navy);
+				        }
+				        h5{
+				        	font-size:13px;
+				         	font-weight:700;
+				         	color:var(--ba-sacondary);
+				         	text-transform:uppercase;
+				        }
+
+				      	p{
+				      		font-size:16px;
+				      	}
+
+				        .social-icon {
+				            img {
+				                &:hover {
+				                    transform: translateY(-3px);
+				                    transition: .5s all;
+				                    cursor: pointer;
+				                }
+				            }
+				        }
+				    }
+				}
+			}
+		
+			.slide{ 
+				.carousel-btn{
+					background-color: var(--bs-secondary);
+					width: 10px;
+					height: 10px;
+					margin: 0px 5px;
+					border-radius: 50%;
+				}
 			}
 		}
 	}
@@ -875,7 +934,7 @@ hr {
    				.explo-contact{
    					a{
    						button{ 
-   							width:90vw !important;
+   							width:70vw !important;
    							margin:5px 0px;
    						}
    					}
@@ -960,11 +1019,12 @@ hr {
 	   			}
 	   		}
 	   		@media screen and(max-width:540px){
-	   			.bring-pera{
+
+	   			.bring-pera{ 
 	   				width:calc(100% / 1);
-	   				text-align:center; 
-	   				border:2px solid red; 
+	   				text-align:center;  
 	   				padding:0px 20px;
+
 	   			}
 	   		}
 	   	}
@@ -1097,9 +1157,7 @@ hr {
    			padding:40px; 
     		box-shadow: 0 .25rem 1.75rem rgba(30, 34, 40, .07);
     		border-radius:8px;
-
-
-
+  
    			.com-team-content{  
    				img{
    					border-radius:50%;
@@ -1145,15 +1203,23 @@ hr {
    				}
    			}
    		}
+   		@media screen and(max-width:540px){
+   			.company-team{
+   				padding:20px; 
+   			}
+   		}
    	}
    	@media screen and (max-width:540px){
 		.we-proud{ 
-	   		padding:90px 15px;
-
+	   		padding:10px 15px;
+	   		overflow-X:hidden;
    			.proud-contant{
    				margin:-50px -15px 60px;
 
    				h3{
+   					padding:0px 0px 0px 0px !important;
+   				}
+   				p{
    					padding:0px 0px 0px 0px !important;
    				}
    			}
@@ -1287,21 +1353,46 @@ hr {
 		   	}
 
 	    }
+
+	    @media screen and (max-width:540px){
+	    	.col-lg-6{
+		    	.p-10 {
+					padding: 1rem !important
+				}
+
+				.p-md-11 {
+			        padding: 1rem !important
+			    }
+			    .p-lg-13 {
+			        padding: 1rem !important
+			    }
+		    }
+	    }
 	    .widget{
 	    	h4{
 	    		font-size:19px;
 	    		margin:0px 0px 10px;
 	    		font-weight:700;
 	    	}  
-	    	p{
+	    	p{ 
 	    		a{ 
-	    			font-size:16px;
-	    			font-weight:600;
+	    			font-size:16px; 
 	    			text-decoration:none;
 	    			color:var(--bs-body-color); 
+	    			line-height:0;
+	    			text-align:center;	 
 	    		}
 	    	} 
 	    } 
+	    @medai screen and(max-width:540px){
+	    	.widget{
+	    		p{ 
+	    			a{
+	    				white-space:normal;
+	    			}
+	    		}
+	    	}
+	    }
 	    nav{
 	    	a{
 	    		margin:0 7px;
@@ -1319,3 +1410,4 @@ hr {
 	    }
     }
 } 
+
