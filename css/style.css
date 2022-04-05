@@ -118,12 +118,12 @@ a {
 
 .services-details {
   margin-top: 50px; }
+  .services-details h6 {
+    font-weight: 700; }
   .services-details h2 {
-    font-size: 40px;
-    font-family: 'DM Serif Display', serif;
-    margin-bottom: 30px;
-    color: black;
-    letter-spacing: 2px; }
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0px 0px 25px; }
   .services-details .more-btn {
     color: white;
     border-radius: 50px;
@@ -135,7 +135,8 @@ a {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    background: var(--bs-blue); }
+    background: var(--bs-blue);
+    background: var(--bs-navy); }
     .services-details .more-btn:hover {
       transform: translateY(-5px);
       transition: .5s; }
@@ -148,10 +149,11 @@ a {
         border-radius: 10px;
         padding: 30px; }
       .services-details .services-card .card-details h4 {
-        font-size: 20px;
-        font-family: 'DM Serif Display', serif;
-        margin-bottom: 10px;
-        color: black; }
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--bs-navy); }
+      .services-details .services-card .card-details P {
+        font-size: 16px; }
     .services-details .services-card .bg-pale-yellow {
       background-color: var(--bs-pale-yellow);
       margin: 5px 0px 0px 80px; }
@@ -172,40 +174,44 @@ a {
 .our-process {
   align-items: center;
   margin: 0px; }
+  .our-process h6 {
+    font-weight: 700;
+    color: var(--bs-body-color); }
   .our-process h2 {
-    font-size: 40px;
-    font-family: 'DM Serif Display', serif;
-    margin-bottom: 30px;
-    color: black;
-    letter-spacing: 2px; }
+    font-weight: 700;
+    color: var(--bs-navy); }
   .our-process .process {
     padding: 0px 95px 0px 95px; }
     .our-process .process .concept {
-      padding: 10px 10px 0px 10px; }
+      padding: 30px 35px 0px 35px; }
       .our-process .process .concept h4 {
-        font-size: 20px;
-        font-family: 'DM Serif Display', serif;
-        margin-bottom: 10px;
-        color: black; }
+        font-weight: 700;
+        font-size: 19px; }
+      .our-process .process .concept p {
+        font-size: 16px; }
 
 .our-services-1 {
   margin-top: 80px; }
   .our-services-1 .our-services-info {
     align-items: center; }
     .our-services-1 .our-services-info h2 {
-      font-size: 40px;
-      font-family: 'DM Serif Display', serif;
-      margin-bottom: 30px;
-      color: black;
-      letter-spacing: 2px; }
+      font-size: 36px;
+      font-weight: 700;
+      padding: 0px 30px 0px 0px; }
     .our-services-1 .our-services-info h6 {
-      margin-bottom: 10px;
-      line-height: 40px;
-      font-size: 18px;
-      color: black;
-      margin: 0px 0px  10px 0px; }
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0px 0px 5px; }
+    .our-services-1 .our-services-info .our-process-contant {
+      padding: 0px 35px; }
+      .our-services-1 .our-services-info .our-process-contant h2 {
+        margin: 0px 0px 30px; }
+      .our-services-1 .our-services-info .our-process-contant h6 {
+        font-size: 16px;
+        font-weight: 700; }
     .our-services-1 .our-services-info .progress {
-      height: 8px; }
+      height: 8px;
+      margin: 0px 0px 20px; }
       .our-services-1 .our-services-info .progress .bg-primary {
         width: 100%;
         color: black;
@@ -222,15 +228,23 @@ a {
         width: 70%;
         color: black;
         font-weight: bold; }
-    .our-services-1 .our-services-info ul {
-      list-style: none; }
-      .our-services-1 .our-services-info ul li {
-        padding: 0px 10px 0px 10px;
-        font-size: 16px; }
-        .our-services-1 .our-services-info ul li i {
-          font-size: 20px;
-          padding: 0px 10px 0px 10px;
-          color: var(--bs-blue); }
+    .our-services-1 .our-services-info .bring-option {
+      width: calc(100% / 2);
+      margin: 15px 0px 0px;
+      padding: 0px 0px 0px 0px; }
+      .our-services-1 .our-services-info .bring-option i {
+        position: absolute;
+        padding: 5px;
+        background: #eee7f5;
+        border-radius: 50%;
+        margin: 2px; }
+      .our-services-1 .our-services-info .bring-option p {
+        white-space: normal;
+        padding: 0px 0px 0px 30px;
+        position: relative; }
+    @media screen and (max-width: 540px) {
+      .our-services-1 .our-services-info .bring-option {
+        width: calc(100% / 1); } }
 
 .pricing-card {
   align-items: center;
@@ -244,16 +258,16 @@ a {
       padding: 30px;
       box-shadow: 1px 1px 10px #ECEAEA; }
       .pricing-card .card-info .card h4 {
-        font-size: 20px;
-        font-family: 'DM Serif Display', serif;
-        margin-bottom: 10px;
-        color: black;
+        font-size: 19px;
+        font-weight: 700;
         text-align: center;
         margin-bottom: 30px; }
         .pricing-card .card-info .card h4 span {
-          font-size: 60px; }
+          font-size: 60px;
+          font-weight: 500; }
       .pricing-card .card-info .card .project-plan {
-        margin-bottom: 30px; }
+        margin: 0px 30px;
+        padding: 60px 40px; }
         .pricing-card .card-info .card .project-plan p {
           padding-bottom: 10px;
           margin: 0px; }
@@ -287,7 +301,8 @@ a {
 
 .count-num {
   animation: counter 5s  alternate ease-in-out;
-  counter-reset: num var(--num); }
+  counter-reset: num var(--num);
+  font-size: 44px; }
 
 .count-num::after {
   content: counter(num); }
@@ -520,16 +535,20 @@ a {
   color: red; }
 
 .get-in-touch h2 {
-  font-size: 40px;
-  font-family: 'DM Serif Display', serif;
-  margin-bottom: 30px;
-  color: black;
-  letter-spacing: 2px; }
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0px 0px 20px; }
 
 .get-in-touch .contact-us .contact-us-link {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
-  .get-in-touch .contact-us .contact-us-link .contact-details .support-info h6 {
-    font-weight: 700; }
+  .get-in-touch .contact-us .contact-us-link .contact-details {
+    padding: 90px; }
+    .get-in-touch .contact-us .contact-us-link .contact-details .support-info h6 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0px 0px 5px; }
+    .get-in-touch .contact-us .contact-us-link .contact-details .support-info p {
+      margin: 0px 0px 20px; }
 
 .get-in-touch .leave-msg h6 {
   font-weight: 600; }
@@ -539,7 +558,7 @@ a {
   margin: 10px;
   white-space: no-wrap; }
   .get-in-touch .leave-msg .msg-box .msg-link input {
-    padding: 10px;
+    padding: 12px 20px;
     margin: 10px;
     font-weight: 600; }
   .get-in-touch .leave-msg .msg-box .msg-link textarea {
@@ -581,13 +600,14 @@ a {
     transition: .5s; }
 
 .get-in-touch .leave-msg .msg-box ::placeholder {
-  font-size: 12px;
+  font-size: 16px;
   color: #959ca9; }
 
 .get-in-touch .leave-msg .msg-box h6 {
-  font-size: 12px;
-  float: right;
-  color: #959ca9; }
+  font-size: 16px;
+  color: #959ca9;
+  text-align: center;
+  margin: 0px 0px 20px; }
   .get-in-touch .leave-msg .msg-box h6 span {
     font-size: 20px; }
 
@@ -725,7 +745,8 @@ hr {
           color: #fff;
           border-radius: 50px;
           padding: 15px 28px;
-          font-weight: 700; }
+          font-weight: 700;
+          margin: 0px 10px 0px; }
         .content-wrapper .contact-one .left-portion .explo-contact a .btn-contact {
           border: 2px solid var(--bs-violet);
           color: var(--bs-violet);
@@ -761,7 +782,9 @@ hr {
         padding: 0px 0px 0px 0px; }
       .content-wrapper .contact-one .left-portion .explo-contact a button {
         width: 70vw !important;
-        margin: 5px 0px; } }
+        margin: 5px 0px; }
+      .content-wrapper .contact-one .left-portion .explo-contact a .btn-explore {
+        margin: 0px 0px 0px; } }
   .content-wrapper .we-bring {
     padding: 160px 15px; }
     .content-wrapper .we-bring .we-bring-one {
