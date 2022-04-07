@@ -116,56 +116,64 @@ a {
   padding: 0px;
   margin: 0px; }
 
-.services-details {
-  margin-top: 50px; }
-  .services-details h6 {
-    font-weight: 700; }
-  .services-details h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin: 0px 0px 25px; }
-  .services-details .more-btn {
-    color: white;
-    border-radius: 50px;
-    width: 150px;
-    height: 50px;
-    padding: 10px 25px;
-    margin-top: 15px;
-    font-weight: 700;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    background: var(--bs-blue);
-    background: var(--bs-navy); }
-    .services-details .more-btn:hover {
-      transform: translateY(-5px);
-      transition: .5s; }
-  .services-details .services-card {
-    padding: 0px;
-    margin: 0px; }
-    .services-details .services-card .card-details {
+.services {
+  padding: 80px 0px 0px 0px; }
+  .services .services-details {
+    margin-top: 50px; }
+    .services .services-details h6 {
+      font-weight: 700; }
+    .services .services-details h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin: 0px 0px 25px; }
+    .services .services-details .more-btn {
+      color: white;
+      border-radius: 50px;
+      width: 150px;
+      height: 50px;
+      padding: 10px 25px;
+      margin-top: 15px;
+      font-weight: 700;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      background: var(--bs-blue);
+      background: var(--bs-navy); }
+      .services .services-details .more-btn:hover {
+        transform: translateY(-5px);
+        transition: .5s; }
+    .services .services-details .services-card {
+      padding: 0px;
       margin: 0px; }
-      .services-details .services-card .card-details .card-info {
-        border-radius: 10px;
-        padding: 30px; }
-      .services-details .services-card .card-details h4 {
-        font-size: 19px;
-        font-weight: 700;
-        color: var(--bs-navy); }
-      .services-details .services-card .card-details P {
-        font-size: 16px; }
-    .services-details .services-card .bg-pale-yellow {
-      background-color: var(--bs-pale-yellow);
-      margin: 5px 0px 0px 80px; }
-    .services-details .services-card .bg-pale-red {
-      background-color: var(--bs-pale-red);
-      margin: 50px 30px 10px 0px; }
-    .services-details .services-card .bg-pale-leaf {
-      background-color: var(--bs-pale-leaf);
-      margin: 0px 10px 0px 30px; }
-    .services-details .services-card .bg-pale-primary {
-      background-color: var(--bs-pale-primary);
-      margin: 20px 80px 0px 0px; }
+      .services .services-details .services-card .card-details {
+        margin: 0px; }
+        .services .services-details .services-card .card-details .card-info {
+          border-radius: 10px;
+          padding: 30px; }
+        .services .services-details .services-card .card-details h4 {
+          font-size: 19px;
+          font-weight: 700;
+          color: var(--bs-navy); }
+        .services .services-details .services-card .card-details P {
+          font-size: 16px; }
+      .services .services-details .services-card .bg-pale-yellow {
+        background-color: var(--bs-pale-yellow);
+        margin: 5px 0px 0px 80px; }
+      .services .services-details .services-card .bg-pale-red {
+        background-color: var(--bs-pale-red);
+        margin: 50px 30px 10px 0px; }
+      .services .services-details .services-card .bg-pale-leaf {
+        background-color: var(--bs-pale-leaf);
+        margin: 0px 10px 0px 30px; }
+      .services .services-details .services-card .bg-pale-primary {
+        background-color: var(--bs-pale-primary);
+        margin: 20px 80px 0px 0px; }
+
+@media screen and (max-width: 540px) {
+  .services {
+    padding: 0px 0px 0px 0px; }
+    .services .services-details {
+      margin-top: 0px; } }
 
 .bg-soft-primary {
   background-color: #f1f5fd !important;
@@ -338,204 +346,190 @@ a {
     transition: .5s;
     cursor: pointer; }
 
-.company-team .about-us-contant {
-  background: var(--bs-gray); }
-  .company-team .about-us-contant h2 {
-    padding-top: 50px;
-    margin: 0px 0px 20px;
-    font-size: 48px;
+.company-team {
+  padding: 80px 0px 0px 0px; }
+  .company-team .about-us-contant {
+    background: var(--bs-gray); }
+    .company-team .about-us-contant h2 {
+      padding-top: 50px;
+      margin: 0px 0px 20px;
+      font-size: 48px;
+      font-weight: 700;
+      color: #000; }
+    .company-team .about-us-contant p {
+      font-size: 21px;
+      font-weight: 400;
+      color: var(--bs-body-color); }
+  .company-team .about-team .company-team-info h2 {
     font-weight: 700;
-    color: #000; }
-  .company-team .about-us-contant p {
-    font-size: 21px;
-    font-weight: 400;
-    color: var(--bs-body-color); }
-
-.company-team .about-team .company-team-info h2 {
-  font-weight: 700;
-  font-size: 36px;
-  font-color: #343f52;
-  margin: 0px 0px 52px; }
-
-.company-team .about-team .company-team-info h4 {
-  font-size: 20px;
-  font-family: 'DM Serif Display', serif;
-  margin-bottom: 10px;
-  color: black;
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  margin: 0px 0px 20px; }
-
-.company-team .about-team .company-team-info p {
-  margin: 0px 0px 30px; }
-
-.company-team .about-team .company-team-info ul {
-  list-style: none; }
-  .company-team .about-team .company-team-info ul li {
-    padding: 0px 10px 0px 10px;
-    font-size: 16px; }
-    .company-team .about-team .company-team-info ul li i {
-      font-size: 20px;
+    font-size: 36px;
+    font-color: #343f52;
+    margin: 0px 0px 52px; }
+  .company-team .about-team .company-team-info h4 {
+    font-size: 20px;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 10px;
+    color: black;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    margin: 0px 0px 20px; }
+  .company-team .about-team .company-team-info p {
+    margin: 0px 0px 30px; }
+  .company-team .about-team .company-team-info ul {
+    list-style: none; }
+    .company-team .about-team .company-team-info ul li {
       padding: 0px 10px 0px 10px;
-      color: var(--bs-blue); }
-
-.company-team .about-team .bring-option {
-  width: calc(100% / 2);
-  margin: 15px 0px 0px;
-  padding: 0px 0px 0px 30px; }
-  .company-team .about-team .bring-option i {
-    position: absolute;
-    padding: 5px;
-    background: #eee7f5;
+      font-size: 16px; }
+      .company-team .about-team .company-team-info ul li i {
+        font-size: 20px;
+        padding: 0px 10px 0px 10px;
+        color: var(--bs-blue); }
+  .company-team .about-team .bring-option {
+    width: calc(100% / 2);
+    margin: 15px 0px 0px;
+    padding: 0px 0px 0px 30px; }
+    .company-team .about-team .bring-option i {
+      position: absolute;
+      padding: 5px;
+      background: #eee7f5;
+      border-radius: 50%;
+      margin: 2px; }
+    .company-team .about-team .bring-option p {
+      white-space: normal;
+      padding: 0px 0px 0px 30px;
+      position: relative; }
+  @media screen and (max-width: 540px) {
+    .company-team .about-team .bring-option {
+      width: calc(100% / 1); } }
+  .company-team .about-team .company-team-image .team-image .about-2 img {
+    width: 370px;
+    height: 370px;
+    margin-left: 180px; }
+  .company-team .about-team .company-team-image .team-image .about-3 img {
+    width: 340px;
+    height: 340px;
+    margin: -240px 0px 0px 30px; }
+  .company-team .how-work h2 {
+    font-weight: 700;
+    margin: 0px 0px 20px;
+    padding: 0px 90px; }
+  .company-team .how-work .how-work-info .how-work-text {
+    padding: 0px 35px;
+    margin: 50px 0px 0px; }
+    .company-team .how-work .how-work-info .how-work-text h2 {
+      text-align: left !important;
+      padding: 0px;
+      margin: 0px 0px 15px; }
+    .company-team .how-work .how-work-info .how-work-text h4 {
+      font-size: 21px;
+      font-weight: 700;
+      margin: 0px 0px 20px; }
+    .company-team .how-work .how-work-info .how-work-text p {
+      font-size: 16px;
+      margin: 0px 0px 20px; }
+  .company-team .how-work .how-work-info .btn {
+    color: white;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    padding: 10px 25px;
+    margin-top: 15px;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: var(--bs-blue);
+    border: 0px;
+    background-color: var(--bs-blue); }
+    .company-team .how-work .how-work-info .btn:hover {
+      transform: translateY(-5px);
+      transition: .5s; }
+  .company-team .how-work .how-work-info .how-work-steps {
+    margin: 50px 0px 0px; }
+    .company-team .how-work .how-work-info .how-work-steps .working-steps {
+      align-items: center;
+      padding: 10px 0px 10px 0px; }
+      .company-team .how-work .how-work-info .how-work-steps .working-steps .card {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; }
+        .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body {
+          padding: 30px 10px; }
+          .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body .number h4 {
+            background: var(--bs-gray);
+            align-items: center;
+            border-radius: 30px;
+            padding: 15px;
+            color: var(--bs-blue);
+            font-weight: 700; }
+          .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body .text {
+            align-items: center;
+            padding: 0px 0px 0px 30px; }
+            .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body .text h6 {
+              font-weight: 700;
+              font-size: 19px; }
+            .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body .text p {
+              margin: 0px;
+              font-size: 16px; }
+    .company-team .how-work .how-work-info .how-work-steps .steps-2 {
+      margin-left: 50px; }
+  .company-team .dotted-bg {
+    margin: 0px 0px -80px 80px;
+    float: left; }
+  .company-team .team h2 {
+    font-size: 36px;
+    color: #000;
+    font-weight: 700; }
+  .company-team .team .team-info .dotted-bg img {
     border-radius: 50%;
-    margin: 2px; }
-  .company-team .about-team .bring-option p {
-    white-space: normal;
-    padding: 0px 0px 0px 30px;
-    position: relative; }
+    margin-left: -20px; }
+  .company-team .team .team-info .team-profile .team-members {
+    padding: 30px; }
+    .company-team .team .team-info .team-profile .team-members .card {
+      border: none;
+      border-radius: 5px; }
+    .company-team .team .team-info .team-profile .team-members .card-body {
+      box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, 0.09);
+      padding: 30px 10px; }
+      .company-team .team .team-info .team-profile .team-members .card-body img {
+        border-radius: 50px; }
+      .company-team .team .team-info .team-profile .team-members .card-body h4 {
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--bs-navy); }
+      .company-team .team .team-info .team-profile .team-members .card-body h5 {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--ba-sacondary);
+        text-transform: uppercase; }
+      .company-team .team .team-info .team-profile .team-members .card-body p {
+        font-size: 16px; }
+      .company-team .team .team-info .team-profile .team-members .card-body .social-icon img:hover {
+        transform: translateY(-3px);
+        transition: .5s all;
+        cursor: pointer; }
+  .company-team .team .team-info .slide .carousel-btn {
+    background-color: var(--bs-secondary);
+    width: 10px;
+    height: 10px;
+    margin: 0px 5px;
+    border-radius: 50%; }
+  .company-team .team-progress .team-progress-info {
+    padding: 0px 150px 0px 150px; }
+    .company-team .team-progress .team-progress-info h2 {
+      font-weight: 700;
+      color: #000 !important; }
+  .company-team .convinc-contant .convinc-img {
+    padding: 50px 0px; }
+    .company-team .convinc-contant .convinc-img img {
+      border-radius: 5px; }
+  .company-team .convinc-contant .customer-support h2 {
+    font-weight: 700; }
+  .company-team .convinc-contant .customer-support .support-info h6 {
+    font-weight: 700; }
 
 @media screen and (max-width: 540px) {
-  .company-team .about-team .bring-option {
-    width: calc(100% / 1); } }
-
-.company-team .about-team .company-team-image .team-image .about-2 img {
-  width: 370px;
-  height: 370px;
-  margin-left: 180px; }
-
-.company-team .about-team .company-team-image .team-image .about-3 img {
-  width: 340px;
-  height: 340px;
-  margin: -240px 0px 0px 30px; }
-
-.company-team .how-work h2 {
-  font-weight: 700;
-  margin: 0px 0px 20px;
-  padding: 0px 90px; }
-
-.company-team .how-work .how-work-info .how-work-text {
-  padding: 0px 35px;
-  margin: 50px 0px 0px; }
-  .company-team .how-work .how-work-info .how-work-text h2 {
-    text-align: left !important;
-    padding: 0px;
-    margin: 0px 0px 15px; }
-  .company-team .how-work .how-work-info .how-work-text h4 {
-    font-size: 21px;
-    font-weight: 700;
-    margin: 0px 0px 20px; }
-  .company-team .how-work .how-work-info .how-work-text p {
-    font-size: 16px;
-    margin: 0px 0px 20px; }
-
-.company-team .how-work .how-work-info .btn {
-  color: white;
-  border-radius: 50px;
-  width: 150px;
-  height: 50px;
-  padding: 10px 25px;
-  margin-top: 15px;
-  font-weight: 700;
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  background: var(--bs-blue);
-  border: 0px;
-  background-color: var(--bs-blue); }
-  .company-team .how-work .how-work-info .btn:hover {
-    transform: translateY(-5px);
-    transition: .5s; }
-
-.company-team .how-work .how-work-info .how-work-steps {
-  margin: 50px 0px 0px; }
-  .company-team .how-work .how-work-info .how-work-steps .working-steps {
-    align-items: center;
-    padding: 10px 0px 10px 0px; }
-    .company-team .how-work .how-work-info .how-work-steps .working-steps .card {
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; }
-      .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body {
-        padding: 30px 10px; }
-        .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body .number h4 {
-          background: var(--bs-gray);
-          align-items: center;
-          border-radius: 30px;
-          padding: 15px;
-          color: var(--bs-blue);
-          font-weight: 700; }
-        .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body .text {
-          align-items: center;
-          padding: 0px 0px 0px 30px; }
-          .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body .text h6 {
-            font-weight: 700;
-            font-size: 19px; }
-          .company-team .how-work .how-work-info .how-work-steps .working-steps .card .card-body .text p {
-            margin: 0px;
-            font-size: 16px; }
-  .company-team .how-work .how-work-info .how-work-steps .steps-2 {
-    margin-left: 50px; }
-
-.company-team .dotted-bg {
-  margin: 0px 0px -80px 80px;
-  float: left; }
-
-.company-team .team h2 {
-  font-size: 36px;
-  color: #000;
-  font-weight: 700; }
-
-.company-team .team .team-info .dotted-bg img {
-  border-radius: 50%;
-  margin-left: -20px; }
-
-.company-team .team .team-info .team-profile .team-members {
-  padding: 30px; }
-  .company-team .team .team-info .team-profile .team-members .card {
-    border: none;
-    border-radius: 5px; }
-  .company-team .team .team-info .team-profile .team-members .card-body {
-    box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, 0.09);
-    padding: 30px 10px; }
-    .company-team .team .team-info .team-profile .team-members .card-body img {
-      border-radius: 50px; }
-    .company-team .team .team-info .team-profile .team-members .card-body h4 {
-      font-size: 19px;
-      font-weight: 700;
-      color: var(--bs-navy); }
-    .company-team .team .team-info .team-profile .team-members .card-body h5 {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--ba-sacondary);
-      text-transform: uppercase; }
-    .company-team .team .team-info .team-profile .team-members .card-body p {
-      font-size: 16px; }
-    .company-team .team .team-info .team-profile .team-members .card-body .social-icon img:hover {
-      transform: translateY(-3px);
-      transition: .5s all;
-      cursor: pointer; }
-
-.company-team .team .team-info .slide .carousel-btn {
-  background-color: var(--bs-secondary);
-  width: 10px;
-  height: 10px;
-  margin: 0px 5px;
-  border-radius: 50%; }
-
-.company-team .team-progress .team-progress-info {
-  padding: 0px 150px 0px 150px; }
-  .company-team .team-progress .team-progress-info h2 {
-    font-weight: 700;
-    color: #000 !important; }
-
-.company-team .convinc-contant .convinc-img {
-  padding: 50px 0px; }
-  .company-team .convinc-contant .convinc-img img {
-    border-radius: 5px; }
-
-.company-team .convinc-contant .customer-support h2 {
-  font-weight: 700; }
-
-.company-team .convinc-contant .customer-support .support-info h6 {
-  font-weight: 700; }
+  .company-team {
+    padding: 0px 0px 0px 0px !important;
+    margin: 0px 0px; } }
 
 ::placeholder {
   color: red; }
@@ -560,33 +554,22 @@ a {
   font-weight: 600; }
 
 .get-in-touch .leave-msg .msg-box .msg-link {
-  padding: 30px; }
+  padding: 20px; }
   .get-in-touch .leave-msg .msg-box .msg-link input {
     padding: 12px 20px;
     margin: 10px;
     font-weight: 600; }
-  .get-in-touch .leave-msg .msg-box .msg-link textarea {
-    padding: 10px;
+  .get-in-touch .leave-msg .msg-box .msg-link .text-area {
     margin: 10px;
     font-weight: 600; }
-  .get-in-touch .leave-msg .msg-box .msg-link .choose-btn {
-    background-color: var(--bs-blue);
-    width: auto;
-    margin: 10px;
-    white-space: normal; }
-  .get-in-touch .leave-msg .msg-box .msg-link .choose-btn {
+  .get-in-touch .leave-msg .msg-box .msg-link button {
     color: white;
     border-radius: 50px;
-    width: 150px;
-    height: 50px;
     padding: 10px 25px;
     margin-top: 15px;
     font-weight: 700;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
     background: var(--bs-blue); }
-    .get-in-touch .leave-msg .msg-box .msg-link .choose-btn:hover {
+    .get-in-touch .leave-msg .msg-box .msg-link button:hover {
       transform: translateY(-5px);
       transition: .5s; }
   .get-in-touch .leave-msg .msg-box .msg-link ::placeholder {
@@ -601,8 +584,7 @@ a {
       font-size: 20px; }
 
 .about-team .team .about-team-info {
-  margin: 50px 0px 0px;
-  padding: 0px 15px; }
+  margin: 50px 0px 0px; }
   .about-team .team .about-team-info h6 {
     font-size: 15px;
     font-weight: 700; }
@@ -1081,3 +1063,78 @@ hr {
         animation-name: animatemedia;
         animation-duration: .5s;
         animation-fill-mode: both; }
+
+.team-contant {
+  margin: 100px 0px 0px;
+  padding: 50px 0px; }
+  .team-contant .about-team-info .about-team-details .save-team h6 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--bs-blue);
+    margin: 0px 0px 8px; }
+  .team-contant .about-team-info .about-team-details .save-team h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--bs-body-color);
+    margin: 0px 0px 25px; }
+  .team-contant .about-team-info .about-team-details .save-team p {
+    font-size: 16px;
+    color: var(--bs-body-color);
+    margin: 0px 0px 20px; }
+  .team-contant .about-team-info .about-team-details .save-team button {
+    margin: 15px 0px 16px;
+    padding: 10px 25px;
+    background: var(--bs-blue);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px; }
+    .team-contant .about-team-info .about-team-details .save-team button:hover {
+      animation-name: animatemedia;
+      animation-duration: 1s;
+      animation-fill-mode: both; }
+  .team-contant .about-team-info .about-team-details .save-team .carousel-indicators button {
+    background: var(--bs-secondary);
+    border: 2px solid var(--bs-secondary);
+    height: 0.05px !important;
+    width: 0.01px !important;
+    margin: 0px 5px;
+    padding: 10px 10px;
+    border-radius: 50%; }
+  .team-contant .about-team-info .about-team-details .save-team .team-information {
+    padding: 30px 10px;
+    box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, 0.07); }
+    .team-contant .about-team-info .about-team-details .save-team .team-information img {
+      border-radius: 50%;
+      margin: 0px 0px 16px;
+      height: 100px;
+      width: 100px; }
+    .team-contant .about-team-info .about-team-details .save-team .team-information h1 {
+      font-size: 19px;
+      font-weight: 700;
+      margin: 0px 0px 8px;
+      text-align: center; }
+    .team-contant .about-team-info .about-team-details .save-team .team-information h6 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0px 0px 8px;
+      text-align: center;
+      color: var(--bs-secondary); }
+    .team-contant .about-team-info .about-team-details .save-team .team-information p {
+      font-size: 16px;
+      margin: 0px 0px 20px;
+      text-align: center; }
+    .team-contant .about-team-info .about-team-details .save-team .team-information .social-icon i {
+      font-size: 20px;
+      margin: 0px 8px; }
+      .team-contant .about-team-info .about-team-details .save-team .team-information .social-icon i:hover {
+        color: var(--bs-violet);
+        animation-name: animatemedia;
+        animation-duration: 1s;
+        animation-fill-mode: both; }
+
+@media screen and (max-width: 540px) {
+  .team-contant {
+    margin: 0px 0px 0px;
+    padding: 0px 0px; } }
