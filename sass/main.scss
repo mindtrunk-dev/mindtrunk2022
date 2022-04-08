@@ -538,7 +538,15 @@ a {
             color: var(--bs-body-color);
         }
     }
+    @media screen and (max-width:540px){
+    	.about-us-contant {
+	        background: var(--bs-gray);
 
+	        h2 {
+	            font-size: 30px;
+	        }
+	    }
+    }
     .about-team { 
         .company-team-info {
             h2 {
@@ -701,14 +709,26 @@ a {
                         }
                     }
                 }
-
+                 
                 .steps-2 {
                     margin-left: 50px;
                 }
             }
         }
     }
+    @media screen and(max-width:540px){
+    	.how-work {
+	        h2 {
+	        	padding: 0px 0px;
+	        }
 
+	        .how-work-info {
+	            .how-work-text {
+	                padding: 0px 5px;
+	            }
+	        }
+	    } 
+    }
     .dotted-bg {
         margin: 0px 0px -80px 80px;
         float: left;
@@ -723,6 +743,7 @@ a {
         }
 
         .team-info {
+
             .dotted-bg {
                 img {
                     border-radius: 50%;
@@ -828,7 +849,7 @@ a {
 }
 @media screen and(max-width:540px){
 	.company-team {
-		padding:0px 0px 0px 0px !important;
+		padding:10px 10px;
 		margin:0px 0px;
 	}
 }
@@ -1044,8 +1065,7 @@ hr {
 
     .top-header {
         padding: 0.8rem 0;
-        background: #fff;
-
+        background: #fff; 
         nav {
 
             .header-menu {
@@ -1161,6 +1181,7 @@ hr {
                 font-size: 52px;
                 margin: 30px 0px 25px;
             }
+            
 
             p {
                 white-space: normal;
@@ -1210,13 +1231,27 @@ hr {
                     animation-fill-mode: both;
                 }
             }
-        }
-
+        } 
         @media screen and(max-width:540px) {
             .left-portion {
                 padding: 0rem 1rem;
             }
+            
         }
+        @media screen and(max-width:912px){
+         
+			.left-portion { 
+					 width:100vw; 
+			}
+			.right-portion {
+				width:100vw; 
+	            img { 
+	            	border-radius:0px !important;
+	                height: 40vh !important; 
+
+	            }
+	        } 
+		} 
 
         .right-portion {
             img {
@@ -1234,7 +1269,7 @@ hr {
         }
     }
 
-    @media screen and(max-width:1020px) {
+    @media screen and(max-width:1000px) {
         .contact-one {
             .left-portion {
                 .explo-contact {
@@ -1245,6 +1280,9 @@ hr {
 
                         .btn-explore {
                             margin: 0px 0px 0px;
+                        }
+                        .btn-contact{
+                        	margin:0px 5px 10px;
                         }
                     }
                 }
@@ -1458,8 +1496,26 @@ hr {
                 }
             }
         }
+        @media screen and(max-width:912px){
+        	.bring-second{
+        		.few-reason{
+        			width:100vw;
+        		}
+        		.few-reason-img{
+        			width:100vw;
+        		}
+        	}
+        }
     }
-
+    @media screen and(max-width:912px){
+    	.we-bring{
+	       	.we-bring-one{
+	      		.we-bring-first{ 	
+		       		width:100vw;
+		    	}
+        	} 
+		}
+    }
     .we-proud {
         padding: 120px 15px;
 
@@ -1556,15 +1612,15 @@ hr {
 
                 }
             }
-        }
-
-        @media screen and(max-width:540px) {
-            .company-team {
-                padding: 20px;
-            }
-        }
+        } 
+    } 
+    @media screen and(max-width:912px){
+    	.we-proud{
+    		.we-proud-contant{
+    			width:100vw;
+    		}
+    	}
     }
-
     @media screen and (max-width:540px) {
         .we-proud {
             padding: 10px 15px;
@@ -1600,23 +1656,25 @@ hr {
             border-radius: 10px;
         }
 
-        .counter-wrapper {
+        .card{
+        	border:none;
+        	.counter-wrapper {
+	            background: #cccccc;
+	            padding: 60px 40px;
 
-            background: #cccccc;
-            padding: 60px 40px;
+	            p {
+	                margin-bottom: 0;
+	                font-size: .8rem;
+	                font-weight: 500
+	            }
 
-            p {
-                margin-bottom: 0;
-                font-size: .8rem;
-                font-weight: 500
-            }
-
-            .counter {
-                font-size: calc(1.325rem + .9vw);
-                letter-spacing: normal;
-                line-height: 1;
-                margin-bottom: .5rem
-            }
+	            .counter {
+	                font-size: calc(1.325rem + .9vw);
+	                letter-spacing: normal;
+	                line-height: 1;
+	                margin-bottom: .5rem
+	            }
+	        }
         }
 
         .card {
@@ -1793,6 +1851,15 @@ hr {
     }
 }
  
+@media screen and(max-width:1000px){
+	.content-wrapper{
+		.top-header{
+			.header-logo{ 
+        		margin:12px 0px 0px;
+        	}
+		} 
+	}
+}
 
 .team-contant{ 
 	margin:100px 0px 0px;

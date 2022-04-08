@@ -360,6 +360,11 @@ a {
       font-size: 21px;
       font-weight: 400;
       color: var(--bs-body-color); }
+  @media screen and (max-width: 540px) {
+    .company-team .about-us-contant {
+      background: var(--bs-gray); }
+      .company-team .about-us-contant h2 {
+        font-size: 30px; } }
   .company-team .about-team .company-team-info h2 {
     font-weight: 700;
     font-size: 36px;
@@ -471,6 +476,11 @@ a {
               font-size: 16px; }
     .company-team .how-work .how-work-info .how-work-steps .steps-2 {
       margin-left: 50px; }
+  @media screen and (max-width: 540px) {
+    .company-team .how-work h2 {
+      padding: 0px 0px; }
+    .company-team .how-work .how-work-info .how-work-text {
+      padding: 0px 5px; } }
   .company-team .dotted-bg {
     margin: 0px 0px -80px 80px;
     float: left; }
@@ -528,7 +538,7 @@ a {
 
 @media screen and (max-width: 540px) {
   .company-team {
-    padding: 0px 0px 0px 0px !important;
+    padding: 10px 10px;
     margin: 0px 0px; } }
 
 ::placeholder {
@@ -746,6 +756,14 @@ hr {
     @media screen and (max-width: 540px) {
       .content-wrapper .contact-one .left-portion {
         padding: 0rem 1rem; } }
+    @media screen and (max-width: 912px) {
+      .content-wrapper .contact-one .left-portion {
+        width: 100vw; }
+      .content-wrapper .contact-one .right-portion {
+        width: 100vw; }
+        .content-wrapper .contact-one .right-portion img {
+          border-radius: 0px !important;
+          height: 40vh !important; } }
     .content-wrapper .contact-one .right-portion img {
       border-radius: 20px 0px 0px 20px;
       height: 70vh;
@@ -754,11 +772,13 @@ hr {
       .content-wrapper .contact-one .right-portion img {
         border-radius: 0px 0px 0px 0px;
         height: 50vh; } }
-  @media screen and (max-width: 1020px) {
+  @media screen and (max-width: 1000px) {
     .content-wrapper .contact-one .left-portion .explo-contact a button {
       margin: 5px 0px; }
     .content-wrapper .contact-one .left-portion .explo-contact a .btn-explore {
-      margin: 0px 0px 0px; } }
+      margin: 0px 0px 0px; }
+    .content-wrapper .contact-one .left-portion .explo-contact a .btn-contact {
+      margin: 0px 5px 10px; } }
   @media screen and (max-width: 540px) {
     .content-wrapper .contact-one {
       margin-top: 0px; }
@@ -881,6 +901,14 @@ hr {
                 line-height: 1.5rem;
                 color: #444444;
                 margin: 0px; }
+    @media screen and (max-width: 912px) {
+      .content-wrapper .we-bring .bring-second .few-reason {
+        width: 100vw; }
+      .content-wrapper .we-bring .bring-second .few-reason-img {
+        width: 100vw; } }
+  @media screen and (max-width: 912px) {
+    .content-wrapper .we-bring .we-bring-one .we-bring-first {
+      width: 100vw; } }
   .content-wrapper .we-proud {
     padding: 120px 15px; }
     .content-wrapper .we-proud .proud-contant {
@@ -941,9 +969,9 @@ hr {
             animation-duration: 1s;
             animation-fill-mode: both;
             color: var(--bs-violet); }
-    @media screen and (max-width: 540px) {
-      .content-wrapper .we-proud .company-team {
-        padding: 20px; } }
+  @media screen and (max-width: 912px) {
+    .content-wrapper .we-proud .we-proud-contant {
+      width: 100vw; } }
   @media screen and (max-width: 540px) {
     .content-wrapper .we-proud {
       padding: 10px 15px;
@@ -963,18 +991,20 @@ hr {
     font-weight: 400; }
   .content-wrapper .what-people img {
     border-radius: 10px; }
-  .content-wrapper .what-people .counter-wrapper {
-    background: #cccccc;
-    padding: 60px 40px; }
-    .content-wrapper .what-people .counter-wrapper p {
-      margin-bottom: 0;
-      font-size: .8rem;
-      font-weight: 500; }
-    .content-wrapper .what-people .counter-wrapper .counter {
-      font-size: calc(1.325rem + .9vw);
-      letter-spacing: normal;
-      line-height: 1;
-      margin-bottom: .5rem; }
+  .content-wrapper .what-people .card {
+    border: none; }
+    .content-wrapper .what-people .card .counter-wrapper {
+      background: #cccccc;
+      padding: 60px 40px; }
+      .content-wrapper .what-people .card .counter-wrapper p {
+        margin-bottom: 0;
+        font-size: .8rem;
+        font-weight: 500; }
+      .content-wrapper .what-people .card .counter-wrapper .counter {
+        font-size: calc(1.325rem + .9vw);
+        letter-spacing: normal;
+        line-height: 1;
+        margin-bottom: .5rem; }
   .content-wrapper .what-people .card {
     border-radius: 20px; }
     .content-wrapper .what-people .card .card-body {
@@ -1063,6 +1093,10 @@ hr {
         animation-name: animatemedia;
         animation-duration: .5s;
         animation-fill-mode: both; }
+
+@media screen and (max-width: 1000px) {
+  .content-wrapper .top-header .header-logo {
+    margin: 12px 0px 0px; } }
 
 .team-contant {
   margin: 100px 0px 0px;
