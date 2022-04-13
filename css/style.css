@@ -78,8 +78,23 @@
   --bs-body-font-weight: 500;
   --bs-body-line-height: 1.7;
   --bs-body-color: #60697b;
-  --bs-body-bg: #fefefe
-; }
+  --bs-body-bg: #fefefe;
+  --bs-fa-twitter: #55acee;
+  --bs-fa-facebook-f: #23599c;
+  --bs-fa-linkedin-in: #007bb5;
+  --bs-fa-instagram: #ff78b2; }
+
+.fa-twitter {
+  color: var(--bs-fa-twitter); }
+
+.fa-facebook-f {
+  color: var(--bs-fa-facebook-f); }
+
+.fa-linkedin-in {
+  color: var(--bs-fa-linkedin-in); }
+
+.fa-instagram {
+  color: var(--bs-fa-instagram); }
 
 * {
   margin: 0;
@@ -676,10 +691,8 @@ hr {
       .content-wrapper .top-header nav .header-menu ul li .nav-link:hover {
         color: var(--bs-violet); }
     .content-wrapper .top-header .social-media-icon nav ul li .nav-link {
-      font-size: 1rem;
-      color: var(--bs-navy); }
+      font-size: 1rem; }
       .content-wrapper .top-header .social-media-icon nav ul li .nav-link:hover {
-        color: var(--bs-violet);
         animation-name: animatemedia;
         animation-duration: 1s;
         animation-fill-mode: both; }
@@ -699,12 +712,9 @@ hr {
         font-weight: 500;
         color: var(--bs-navy); }
         .content-wrapper .mob-header .offcanvas .offcanvas-body .social-media-icon a:hover {
-          color: var(--bs-violet);
           animation: animatemedia .5s ease normal; }
     .content-wrapper .mob-header .offcanvas-btn {
       padding: 1.2rem 0.75rem; }
-      .content-wrapper .mob-header .offcanvas-btn button i {
-        color: var(--bs-violet); }
   @media (max-width: 540px) {
     .content-wrapper .top-header {
       display: none; }
@@ -879,7 +889,6 @@ hr {
                 .content-wrapper .we-bring .bring-second .few-reason .accordian .card .card-header span i {
                   height: 25px;
                   width: 25px;
-                  color: var(--bs-violet);
                   line-height: 22px;
                   font-size: 1rem; }
               .content-wrapper .we-bring .bring-second .few-reason .accordian .card .card-header h2 {
@@ -967,8 +976,7 @@ hr {
           .content-wrapper .we-proud .company-team .com-team-content .social-media-icon a i:hover {
             animation-name: animatemedia;
             animation-duration: 1s;
-            animation-fill-mode: both;
-            color: var(--bs-violet); }
+            animation-fill-mode: both; }
   @media screen and (max-width: 912px) {
     .content-wrapper .we-proud .we-proud-contant {
       width: 100vw; } }
@@ -1053,7 +1061,6 @@ hr {
     margin: 0px 0px 20px;
     color: var(--bs-body-color); }
   .content-wrapper footer .col-lg-6 a {
-    background: var(--bs-violet);
     color: #fff;
     margin: 10px 0px 0px;
     padding: 10px 24px;
@@ -1089,7 +1096,6 @@ hr {
     .content-wrapper footer nav a i {
       font-size: 1rem; }
       .content-wrapper footer nav a i:hover {
-        color: var(--bs-violet);
         animation-name: animatemedia;
         animation-duration: .5s;
         animation-fill-mode: both; }
@@ -1163,7 +1169,6 @@ hr {
       font-size: 20px;
       margin: 0px 8px; }
       .team-contant .about-team-info .about-team-details .save-team .team-information .social-icon i:hover {
-        color: var(--bs-violet);
         animation-name: animatemedia;
         animation-duration: 1s;
         animation-fill-mode: both; }
@@ -1172,3 +1177,46 @@ hr {
   .team-contant {
     margin: 0px 0px 0px;
     padding: 0px 0px; } }
+
+.all-member .all-team-member .member-details {
+  width: calc(100% / 4);
+  padding: 10px 10px;
+  margin: 20px 0px 0px; }
+  .all-member .all-team-member .member-details .team-details {
+    border-radius: 20px;
+    padding: 30px 30px;
+    box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, 0.07); }
+    .all-member .all-team-member .member-details .team-details .team-contant-details img {
+      border-radius: 50%;
+      height: 150px;
+      width: 150px; }
+    .all-member .all-team-member .member-details .team-details .team-contant-details h1 {
+      text-align: center;
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--bs-body-color);
+      margin: 0px 0px 8px;
+      font-family: 'Manrope', sans-serif; }
+    .all-member .all-team-member .member-details .team-details .team-contant-details h3 {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--bs-secondary);
+      margin: 0px 0px 8px;
+      font-family: 'Manrope', sans-serif; }
+    .all-member .all-team-member .member-details .team-details .team-contant-details p {
+      font-size: 16px;
+      text-align: center;
+      margin: 0px 0px 20px; }
+    .all-member .all-team-member .member-details .team-details .team-contant-details .social-icon i {
+      font-size: 20px;
+      margin: 0px 8px; }
+      .all-member .all-team-member .member-details .team-details .team-contant-details .social-icon i:hover {
+        animation-name: animatemedia;
+        animation-duration: 1s;
+        animation-fill-mode: both; }
+
+@media screen and (max-width: 540px) {
+  .all-member .all-team-member .member-details {
+    width: calc(100% / 1); } }
