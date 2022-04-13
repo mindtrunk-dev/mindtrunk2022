@@ -82,9 +82,24 @@
     --bs-body-font-weight: 500;
     --bs-body-line-height: 1.7;
     --bs-body-color: #60697b;
-    --bs-body-bg: #fefefe
+    --bs-body-bg: #fefefe;
+    --bs-fa-twitter: #55acee;
+    --bs-fa-facebook-f: #23599c;
+    --bs-fa-linkedin-in: #007bb5;
+    --bs-fa-instagram: #ff78b2;
 }
-
+.fa-twitter{
+	color:var(--bs-fa-twitter);
+}
+.fa-facebook-f{
+	color:var(--bs-fa-facebook-f);
+}
+.fa-linkedin-in{
+	color:var(--bs-fa-linkedin-in);
+}
+.fa-instagram{
+	color:var(--bs-fa-instagram);	
+}
 * {
     margin: 0;
     padding: 0;
@@ -520,7 +535,7 @@ a {
 }
 
 .company-team {
-	padding:80px 0px 0px 0px;
+	padding:80px 0px 0px 0px; 
     .about-us-contant {
         background: var(--bs-gray);
 
@@ -1091,11 +1106,9 @@ hr {
                 ul {
                     li {
                         .nav-link {
-                            font-size: 1rem;
-                            color: var(--bs-navy);
+                            font-size: 1rem; 
 
-                            &:hover {
-                                color: var(--bs-violet);
+                            &:hover { 
                                 animation-name: animatemedia;
                                 animation-duration: 1s;
                                 animation-fill-mode: both;
@@ -1135,8 +1148,7 @@ hr {
                         font-weight: 500;
                         color: var(--bs-navy);
 
-                        &:hover {
-                            color: var(--bs-violet);
+                        &:hover { 
                             animation: animatemedia .5s ease normal;
                         }
                     }
@@ -1145,13 +1157,7 @@ hr {
         }
 
         .offcanvas-btn {
-            padding: 1.2rem 0.75rem;
-
-            button {
-                i {
-                    color: var(--bs-violet);
-                }
-            }
+            padding: 1.2rem 0.75rem; 
         }
     }
 
@@ -1458,7 +1464,6 @@ hr {
                                 i {
                                     height: 25px;
                                     width: 25px;
-                                    color: var(--bs-violet);
                                     line-height: 22px;
                                     font-size: 1rem;
                                 }
@@ -1604,8 +1609,7 @@ hr {
                             &:hover {
                                 animation-name: animatemedia;
                                 animation-duration: 1s;
-                                animation-fill-mode: both;
-                                color: var(--bs-violet);
+                                animation-fill-mode: both; 
                             }
                         }
                     }
@@ -1771,8 +1775,7 @@ hr {
                 color: var(--bs-body-color);
             }
 
-            a {
-                background: var(--bs-violet);
+            a { 
                 color: #fff;
                 margin: 10px 0px 0px;
                 padding: 10px 24px;
@@ -1839,8 +1842,7 @@ hr {
                 i {
                     font-size: 1rem;
 
-                    &:hover {
-                        color: var(--bs-violet);
+                    &:hover { 
                         animation-name: animatemedia;
                         animation-duration: .5s;
                         animation-fill-mode: both;
@@ -1948,8 +1950,7 @@ hr {
 							font-size:20px;
 							margin:0px 8px;
 
-							&:hover {
-                                color: var(--bs-violet);
+							&:hover { 
                                 animation-name: animatemedia;
                                 animation-duration: 1s;
                                 animation-fill-mode: both;
@@ -1965,5 +1966,78 @@ hr {
 	.team-contant{ 
 		margin:0px 0px 0px;
 		padding:0px 0px;
+	}
+}
+
+
+
+.all-member{ 
+	 
+	.all-team-member{ 
+
+		.member-details{ 
+			width:calc(100% / 4);
+			padding:10px 10px;
+			margin:20px 0px 0px;
+			.team-details{  
+				border-radius:20px;
+				padding:30px 30px;
+				box-shadow: 0 .25rem 1.75rem rgba(30, 34, 40, .07);
+
+				.team-contant-details{
+					img{
+						border-radius:50%;
+						height:150px;
+						width:150px;
+					}
+					h1{
+						text-align:center;
+						font-size:19px;
+						font-weight:700;
+						color:var(--bs-body-color);
+						margin:0px 0px 8px;
+						font-family: 'Manrope', sans-serif;
+					}
+					h3{
+						text-align:center;
+						font-size:13px;
+						font-weight:700;
+						text-transform:uppercase;
+						color:var(--bs-secondary);
+						margin:0px 0px 8px;
+						font-family: 'Manrope', sans-serif;
+					}
+					p{
+						font-size:16px;
+						text-align:center;
+						margin:0px 0px 20px;
+					}
+
+					.social-icon{
+						i{
+							font-size:20px;
+							margin:0px 8px;
+
+							&:hover { 
+	                               animation-name: animatemedia;
+	                               animation-duration: 1s;
+	                               animation-fill-mode: both;
+	                           }
+						}
+					}
+				}
+			}
+		}
+	} 
+}
+@media screen and(max-width:540px){
+	.all-member{ 
+	 
+		.all-team-member{ 
+
+			.member-details{ 
+				width:calc(100% / 1);
+			}
+		}
 	}
 }
